@@ -1,0 +1,80 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Huy Nghiem's Journal
+    title: Huy Nghiem's Journal
+    expand_sections: true
+    chapters:
+      - glob: 1.journal/2024/*
+  - caption: Lớp 6
+    chapters:
+    - file: 2.sixth_grade/arithmetics
+      options:
+        numbered: true
+      sections:
+      - glob: 2.sixth_grade/arithmetics/notebooks/*
+    - file: 2.sixth_grade/algebra
+      options:
+        numbered: true
+      sections:
+      - glob: 2.sixth_grade/algebra/notebooks/*
+    - file: 2.sixth_grade/geometry
+      options:
+        numbered: true
+      sections:
+      - glob: 2.sixth_grade/geometry/notebooks/*
+  - caption: Lớp 7
+    chapters:
+    - file: 3.seventh_grade/arithmetics
+      options:
+        numbered: true
+      sections:
+      - glob: 3.seventh_grade/arithmetics/notebooks/*
+    - file: 3.seventh_grade/algebra
+      options:
+        numbered: true
+      sections:
+      - glob: 3.seventh_grade/algebra/notebooks/*
+    - file: 3.seventh_grade/geometry
+      options:
+        numbered: true
+      sections:
+      - glob: 3.seventh_grade/geometry/notebooks/*
+  - caption: Lớp 8
+    chapters:
+    - file: 4.eighth_grade/arithmetics
+      options:
+        numbered: true
+      sections:
+      - glob: 4.eighth_grade/arithmetics/notebooks/*
+    - file: 4.eighth_grade/algebra
+      options:
+        numbered: true
+      sections:
+      - glob: 4.eighth_grade/algebra/notebooks/*
+    - file: 4.eighth_grade/geometry
+      options:
+        numbered: true
+      sections:
+      - glob: 4.eighth_grade/geometry/notebooks/*
+  - caption: Lớp 9
+    chapters:
+    - file: 5.ninth_grade/arithmetics
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade/arithmetics/notebooks/*
+    - file: 5.ninth_grade/algebra
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade/algebra/notebooks/*
+    - file: 5.ninth_grade/geometry
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade/geometry/notebooks/*
+    
