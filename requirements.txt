@@ -3,3 +3,4 @@ matplotlib
 numpy
 polars
 hvplot
+ghp-import

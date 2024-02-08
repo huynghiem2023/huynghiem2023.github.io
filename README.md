@@ -10,6 +10,9 @@ pip3 install -r requirements.txt
 jb clean src && jb build src && ghp-import -n -p -f _build/html
 ```
 
+```PowerShell
+(jb clean src) -and (jb build src) -and (ghp-import -n -p -f src/_build/html)
+```
 # 3. YouTube Videos
 
 ## 3.1. Link to YouTube
