@@ -7,3 +7,6 @@
 
 ## Bird flying
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SI7GoDPi7TE?si=unybxXykJqWb2PWz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## The speed ò the helicopter
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fJYavwrYCvw?si=3verjUdG5RhtCx2x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
