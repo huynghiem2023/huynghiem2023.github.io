@@ -1,3 +1,3 @@
-# Bài số 1
+# Tập hợp - Phần tử của tập hợ
 
-Test bài số 1
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PAD8Pt38XrU?si=cq_TSvOADdyQAtOl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
