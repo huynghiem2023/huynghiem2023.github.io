@@ -1,4 +1,4 @@
-# Bài số 2
+# Bài số 2 - Học về số tự nhiên
 
 ## Ghi số tự nhiên
 
