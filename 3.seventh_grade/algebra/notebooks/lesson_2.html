@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Bài số 2 &#8212; My Journal</title>
+    <title>2. CÁC PHÉP TÍNH VỚI SỐ HỮU TỈ &#8212; My Journal</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '3.seventh_grade/algebra/notebooks/lesson_2';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Hình học" href="../../geometry.html" />
+    <link rel="next" title="3. Lũy thừa của một số hữu tỉ" href="lesson_3.html" />
     <link rel="prev" title="1. Tập hợp các số hữu tỉ Q" href="lesson_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -207,13 +207,18 @@
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../algebra.html">Đại số</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="lesson_1.html">1. Tập hợp các số hữu tỉ Q</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">2. Bài số 2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2. CÁC PHÉP TÍNH VỚI SỐ HỮU TỈ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_3.html">3. Lũy thừa của một số hữu tỉ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_4.html">4. Quy tắc dấu ngoặc và quy tắc chuyển vế (tiết 1)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_1.html">1. Hình học trực quan</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_2.html">3. HÌNH LĂNG TRỤ ĐỨNG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_3.html">4. HÌNH HỌC PHẲNG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_4.html">5. TIA PHÂN GIÁC CỦA MỘT GÓC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_5.html">6. Hai đường thẳng song song</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -447,7 +452,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -458,11 +465,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bài số 2</h1>
+    <h1>CÁC PHÉP TÍNH VỚI SỐ HỮU TỈ</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cach-cong-tru-hai-so-huu-ti">2.1. Cách cộng, trừ hai số hữu tỉ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cach-nhan-chia-hai-so-huu-ti">2.2. Cách nhân, chia hai số hữu tỉ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cach-tim-x-so-huu-ti">2.3. Cách tìm x số hữu tỉ</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -472,9 +489,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="bai-so-2">
-<h1><span class="section-number">2. </span>Bài số 2<a class="headerlink" href="#bai-so-2" title="Link to this heading">#</a></h1>
-<p>Test bài số 2</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="cac-phep-tinh-voi-so-huu-ti">
+<h1><span class="section-number">2. </span>CÁC PHÉP TÍNH VỚI SỐ HỮU TỈ<a class="headerlink" href="#cac-phep-tinh-voi-so-huu-ti" title="Link to this heading">#</a></h1>
+<section id="cach-cong-tru-hai-so-huu-ti">
+<h2><span class="section-number">2.1. </span>Cách cộng, trừ hai số hữu tỉ<a class="headerlink" href="#cach-cong-tru-hai-so-huu-ti" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TY8ndTGAI9g?si=YEE9rNtvuXs7hJfy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="cach-nhan-chia-hai-so-huu-ti">
+<h2><span class="section-number">2.2. </span>Cách nhân, chia hai số hữu tỉ<a class="headerlink" href="#cach-nhan-chia-hai-so-huu-ti" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GooFWAq-de8?si=wfe1J99iadUlXnK9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="cach-tim-x-so-huu-ti">
+<h2><span class="section-number">2.3. </span>Cách tìm x số hữu tỉ<a class="headerlink" href="#cach-tim-x-so-huu-ti" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EQZT4VCRsSc?si=7q8pW15NgRgY9uLi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -517,11 +545,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../../geometry.html"
+       href="lesson_3.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hình học</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Lũy thừa của một số hữu tỉ</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -532,7 +560,22 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cach-cong-tru-hai-so-huu-ti">2.1. Cách cộng, trừ hai số hữu tỉ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cach-nhan-chia-hai-so-huu-ti">2.2. Cách nhân, chia hai số hữu tỉ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cach-tim-x-so-huu-ti">2.3. Cách tìm x số hữu tỉ</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
