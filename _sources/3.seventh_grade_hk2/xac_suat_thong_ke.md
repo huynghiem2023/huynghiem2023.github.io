@@ -1,1 +1,1 @@
-# Số học
+# Xac Suat Thong Ke
