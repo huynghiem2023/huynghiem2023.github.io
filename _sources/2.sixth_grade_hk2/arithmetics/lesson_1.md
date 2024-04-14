@@ -16,3 +16,5 @@
 
 ## Tính chất cơ bản của phân số (Luyện tập)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CmzLDCap8Hs?si=KVVAy1F-XJlOLr6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Tính chất cơ bản của phân số (Luyện tập)
