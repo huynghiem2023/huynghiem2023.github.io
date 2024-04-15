@@ -1,3 +1,3 @@
-# Bài số 2
+# Biểu đồ hình quạt tròn 
 
-Test bài số 2
+## Biểu đồ hình quạt tròn 
