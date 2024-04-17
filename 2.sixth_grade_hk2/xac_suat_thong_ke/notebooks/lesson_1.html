@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Một số yếu tố xác suất &#8212; My Journal</title>
+    <title>1. Thu thập và phân loại dữ liệu &#8212; My Journal</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_1';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Hình học" href="../../geometry.html" />
+    <link rel="next" title="2. Biểu diễn dữ liệu trên bảng" href="lesson_2.html" />
     <link rel="prev" title="Xấc suất thống kê" href="../../xac_suat_thong_ke.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -327,7 +327,15 @@
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../xac_suat_thong_ke.html">Xấc suất thống kê</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1. Một số yếu tố xác suất</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1. Thu thập và phân loại dữ liệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_2.html">2. Biểu diễn dữ liệu trên bảng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_3.html">3. Biểu đồ tranh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_4.html">4. Biểu đồ cột - Biểu đồ cột kép</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_5.html">5. Bài tập cuối chương 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_6.html">6. Phép thử nghiệm – Sự kiện</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_7.html">7. Xác suất thực nghiệm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_8.html">8. Bài tập cuối chương 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_9.html">9. </a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -632,7 +640,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Một số yếu tố xác suất</h1>
+    <h1>Thu thập và phân loại dữ liệu</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -642,10 +650,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phep-thu-nghiem-su-kien-li-thuyet">1.1. Phép thử nghiệm | Sự kiện (Lí thuyết)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phep-thu-nghiem-su-kien-bai-tap">1.2. Phép thử nghiệm | Sự kiện (Bài tập)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xac-suat-thuc-nghiem-li-thuyet">1.3. Xác suất thực nghiệm (Lí thuyết)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xac-suat-thuc-nghiem-bai-tap">1.4. ## Xác suất thực nghiệm (Bài tập)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thu-thap-va-phan-loai-du-lieu-ngan-gon">1.1. Thu thập và phân loại dữ liệu (ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thu-thap-va-phan-loai-du-lieu-ctst-li-thuyet">1.2. Thu thập và phân loại dữ liệu (CTST)- Lí thuyết</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thu-thap-va-phan-loai-du-lieu-ctst-bai-tap">1.3. Thu thập và phân loại dữ liệu (CTST)- Bài tập</a></li>
 </ul>
             </nav>
         </div>
@@ -657,23 +664,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="mot-so-yeu-to-xac-suat">
-<h1><span class="section-number">1. </span>Một số yếu tố xác suất<a class="headerlink" href="#mot-so-yeu-to-xac-suat" title="Link to this heading">#</a></h1>
-<section id="phep-thu-nghiem-su-kien-li-thuyet">
-<h2><span class="section-number">1.1. </span>Phép thử nghiệm | Sự kiện (Lí thuyết)<a class="headerlink" href="#phep-thu-nghiem-su-kien-li-thuyet" title="Link to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k9wXvThBJq4?si=O6xDmoifD0OTGWTy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <section class="tex2jax_ignore mathjax_ignore" id="thu-thap-va-phan-loai-du-lieu">
+<h1><span class="section-number">1. </span>Thu thập và phân loại dữ liệu<a class="headerlink" href="#thu-thap-va-phan-loai-du-lieu" title="Link to this heading">#</a></h1>
+<section id="thu-thap-va-phan-loai-du-lieu-ngan-gon">
+<h2><span class="section-number">1.1. </span>Thu thập và phân loại dữ liệu (ngắn gọn)<a class="headerlink" href="#thu-thap-va-phan-loai-du-lieu-ngan-gon" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ulIUPzwGaJs?si=HCxz5zY_xur4IHGJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
-<section id="phep-thu-nghiem-su-kien-bai-tap">
-<h2><span class="section-number">1.2. </span>Phép thử nghiệm | Sự kiện (Bài tập)<a class="headerlink" href="#phep-thu-nghiem-su-kien-bai-tap" title="Link to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gr8-JOK2n9Y?si=PsZpq3ZZh_QhTn_N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="thu-thap-va-phan-loai-du-lieu-ctst-li-thuyet">
+<h2><span class="section-number">1.2. </span>Thu thập và phân loại dữ liệu (CTST)- Lí thuyết<a class="headerlink" href="#thu-thap-va-phan-loai-du-lieu-ctst-li-thuyet" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2JJpVSabYoo?si=cs1G0Ye0zUs0-vzv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
-<section id="xac-suat-thuc-nghiem-li-thuyet">
-<h2><span class="section-number">1.3. </span>Xác suất thực nghiệm (Lí thuyết)<a class="headerlink" href="#xac-suat-thuc-nghiem-li-thuyet" title="Link to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Eh_f9qTRUzw?si=_wn-oTKrzj3Qj1KJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
-<section id="xac-suat-thuc-nghiem-bai-tap">
-<h2><span class="section-number">1.4. </span>## Xác suất thực nghiệm (Bài tập)<a class="headerlink" href="#xac-suat-thuc-nghiem-bai-tap" title="Link to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SQu9ACtT0js?si=5FMpbJcyZQPltToJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<section id="thu-thap-va-phan-loai-du-lieu-ctst-bai-tap">
+<h2><span class="section-number">1.3. </span>Thu thập và phân loại dữ liệu (CTST)- Bài tập<a class="headerlink" href="#thu-thap-va-phan-loai-du-lieu-ctst-bai-tap" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fUyYghf2gMk?si=1U-9v-Ie4wW3p49x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 </section>
 
@@ -717,11 +720,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="../../geometry.html"
+       href="lesson_2.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Hình học</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Biểu diễn dữ liệu trên bảng</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -741,10 +744,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phep-thu-nghiem-su-kien-li-thuyet">1.1. Phép thử nghiệm | Sự kiện (Lí thuyết)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phep-thu-nghiem-su-kien-bai-tap">1.2. Phép thử nghiệm | Sự kiện (Bài tập)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xac-suat-thuc-nghiem-li-thuyet">1.3. Xác suất thực nghiệm (Lí thuyết)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xac-suat-thuc-nghiem-bai-tap">1.4. ## Xác suất thực nghiệm (Bài tập)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thu-thap-va-phan-loai-du-lieu-ngan-gon">1.1. Thu thập và phân loại dữ liệu (ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thu-thap-va-phan-loai-du-lieu-ctst-li-thuyet">1.2. Thu thập và phân loại dữ liệu (CTST)- Lí thuyết</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thu-thap-va-phan-loai-du-lieu-ctst-bai-tap">1.3. Thu thập và phân loại dữ liệu (CTST)- Bài tập</a></li>
 </ul>
   </nav></div>
 
