@@ -1,14 +1,12 @@
-# CÁC VẤN ĐỀ VỀ SỐ THẬP PHÂN
+# CÁC VẤN ĐỀ VỀ TỈ SỐ
+## Tỉ số và tỉ số phần trăm (Lí thuyết)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EEyBLKRGVzY?si=RtHuNsTlBZaw7k6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## SỐ THẬP PHÂN (lÍ THUYẾT)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2QevTEBkdF8?si=XQxF4lQbPRrg44Mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Tỉ số và tỉ số phần trăm (Bài tập)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/toPkos6cBHg?si=bXaaCzyjgLaBWnu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## SỐ THẬP PHÂN (Bài tập)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yA-mfnmNHwU?si=gQ2wo03AGsp4jO15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Một số bài toán về tỉ số và tỉ số phần trăm (Lí thuyết)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Fw8gTsJPCw?si=VmbwxPfKiKb8VMlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Các phép tính về số thập phân (Lí thuyết)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EPxiKzyRyb0?si=J-kY_PywpEyWGGrH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Các phép tính về số thập phân (Bài tập)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KkwvedQ5D14?si=k1S6p6UnQQEy227g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+## Một số bài toán về tỉ số và tỉ số phần trăm (Bài tập)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KHQ-gCqcNPg?si=AT3bI7dvUCsn3-uJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
