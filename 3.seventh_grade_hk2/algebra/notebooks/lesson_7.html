@@ -5,9 +5,50 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../../../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../../../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../../../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../../../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../../../_static/javascripts/modernizr.js"></script>
+  
+  
+  
     <title>7. Bài tập cuối chương 7 &#8212; My Journal</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/conestack.css?v=25d55b4c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/material.css?v=79c92029" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
@@ -33,98 +74,166 @@
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Hình học" href="../../geometry.html" />
     <link rel="prev" title="6. Phép nhân, chia đa thức một biến" href="lesson_6.html" />
-<link rel="stylesheet" type="text/css" src="../../../_static/bootstrap.css" />
-<script src="../../../_static/bootstrap.bundle.min.js"></script>
-<script src="../../../_static/conestack.js"></script>
-
-  </head><body>
-
-  <noscript>
-    <style type="text/css">
-      #searchbox,
-      #searchdesc {
-        display: none;
-      }
-      @media (max-width: 768px) {
-        #navbar-toggle {
-          display: none;
-        }
-        #cs-mobile-menu {
-          display: block;
-        }
-        #cs-layout {
-          margin-top: 12rem;
-        }
-        #cs-ext-links {
-          margin-right: 2rem!important;
-        }
-      }
-    </style>
-  </noscript>
-
   
-  <header class="navbar navbar-expand-md" id="header">
-    <nav class="container-xxl flex-wrap flex-md-nowrap p-0" id="cs-nav">
-  <a id="logo" class="navbar-brand p-0 me-2" href="../../../intro.html">
-    <img src="_static/conestack.svg"
-         alt="Logo"
-         width="40px"
-         height="40px" />
-    <span>Conestack</span>
-  </a>
+   
 
+  </head>
+  <body dir=ltr
+        data-md-color-primary=blue-grey data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
       
-  <div id="nav-search" class="ms-auto">
-    <div id="searchbox" class="nav-item me-3" role="search">
-      <form class="search input-group" action="../../../search.html" method="get">
-        <input type="text" class="form-control" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-        <button type="submit" 
-                class="bi bi-search input-group-text"
-                btn-title="Search documentation"></button>
-      </form>
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#3.seventh_grade_hk2/algebra/notebooks/lesson_7" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../intro.html" title="My Journal"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">My Journal</span>
+          <span class="md-header-nav__topic"> 7. Bài tập cuối chương 7 </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../../../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
     </div>
   </div>
-      
+</div>
 
-      <button id="navbar-toggle" class="navbar-toggler p-0 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#cs-mobile-menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></svg>
-      </button>
-
-      <div class="collapse container-fluid m-0 p-3" id="cs-mobile-menu"><nav class="cs-mobile-toc">
-  
-</nav>
       </div>
-    </nav>
-  </header>
+      
+      
+  
+  <script src="../../../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../../../"versions.json"",
+        target_loc = "../../../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
   
 
-  <div class="container-xxl my-md-4" id="cs-layout">
-    
-  <aside id="cs-sidebar" class="ms-4 sphinxsidebar"><nav class="cs-nav-toc">
-  
-</nav>
-    
-  </aside>
-    
+    </div>
+  </nav>
+</header>
 
+  
+  <div class="md-container">
     
-      <main class="document cs-main order-1">
     
-      <div class="ps-lg-4 mt-3 cs-content">
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../../../intro.html" class="md-tabs__link">My Journal</a></li>
+          <li class="md-tabs__item"><a href="../../algebra.html" class="md-tabs__link">Đại số</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
         
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../intro.html" title="My Journal" class="md-nav__button md-logo">
+      
+        <img src="../../../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../../../intro.html"
+       title="My Journal">My Journal</a>
+  </label>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#3-seventh-grade-hk2-algebra-notebooks-lesson-7--page-root" class="md-nav__link">7. Bài tập cuối chương 7</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#bai-tap-cuoi-chuong-7-video-1" class="md-nav__link">7.1. Bài tập cuối chương 7 (video 1)</a>
+        </li>
+        <li class="md-nav__item"><a href="#id1" class="md-nav__link">7.2. ## Bài tập cuối chương 7 (video 1)</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../../../_sources/3.seventh_grade_hk2/algebra/notebooks/lesson_7.md">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
   <section class="tex2jax_ignore mathjax_ignore" id="bai-tap-cuoi-chuong-7">
-<h1><span class="section-number">7. </span>Bài tập cuối chương 7<a class="headerlink" href="#bai-tap-cuoi-chuong-7" title="Link to this heading">#</a></h1>
+<h1 id="3-seventh-grade-hk2-algebra-notebooks-lesson-7--page-root"><span class="section-number">7. </span>Bài tập cuối chương 7<a class="headerlink" href="#3-seventh-grade-hk2-algebra-notebooks-lesson-7--page-root" title="Link to this heading">¶</a></h1>
 <section id="bai-tap-cuoi-chuong-7-video-1">
-<h2><span class="section-number">7.1. </span>Bài tập cuối chương 7 (video 1)<a class="headerlink" href="#bai-tap-cuoi-chuong-7-video-1" title="Link to this heading">#</a></h2>
-<p>&lt;<iframe width="560" height="315" src="https://www.youtube.com/embed/RGThK573Tnw?si=7boKSvvUzi56UWma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+<h2 id="bai-tap-cuoi-chuong-7-video-1"><span class="section-number">7.1. </span>Bài tập cuối chương 7 (video 1)<a class="headerlink" href="#bai-tap-cuoi-chuong-7-video-1" title="Link to this heading">¶</a></h2>
+<p>&lt;<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/RGThK573Tnw?si=7boKSvvUzi56UWma" title="YouTube video player" width="560"></iframe></p>
 </section>
 <section id="id1">
-<h2><span class="section-number">7.2. </span>## Bài tập cuối chương 7 (video 1)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AMhIyx6Q8Fw?si=bbj16a7f5SfBfyTp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="id1"><span class="section-number">7.2. </span>## Bài tập cuối chương 7 (video 1)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/AMhIyx6Q8Fw?si=bbj16a7f5SfBfyTp" title="YouTube video player" width="560"></iframe>
 </section>
 </section>
-
-    <script type="text/x-thebe-config">
+<script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
@@ -142,44 +251,63 @@
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+<script>kernelName = 'python3'</script>
 
+          </article>
+        </div>
       </div>
-
-    
-  <div class="cs-local-toc mx-4 mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-    <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-    <nav id="TableOfContents">
-      <ul>
-<li><a class="reference internal" href="#bai-tap-cuoi-chuong-7-video-1">7.1. Bài tập cuối chương 7 (video 1)</a></li>
-<li><a class="reference internal" href="#id1">7.2. ## Bài tập cuối chương 7 (video 1)</a></li>
-</ul>
-
-    </nav>
-  </div>
-    
     </main>
-  </div><div class="container footer" role="contentinfo">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center pt-2 my-4 border-top"><ul class="pb-2 mb-3 nav container border-bottom">
-  <li class="nav-item col-md-6 col">
-    <a href="lesson_6.html"
-       title="previous chapter"
-       class="nav-link px-2 text-muted previous-chapter"><span class="section-number">6. </span>Phép nhân, chia đa thức một biến</a>
-  </li>
-  <li class="nav-item col-md-6 col text-end">
-    <a href="../../geometry.html"
-       title="next chapter"
-       class="nav-link px-2 text-muted next-chapter">Hình học</a>
-  </li>
-</ul>
-      <div class="container text-center text-muted pt-2 pb-2">
-          &#169; Copyright 2023.
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="lesson_6.html" title="6. Phép nhân, chia đa thức một biến"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> <span class="section-number">6. </span>Phép nhân, chia đa thức một biến </span>
+              </div>
+            </a>
+          
+          
+            <a href="../../geometry.html" title="Hình học"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> Hình học </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2023.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
       </div>
-      <div class="container text-center text-muted pt-2 pb-2">
-        Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
-      </div>
+    </div>
   </footer>
-</div>
-
+  <script src="../../../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
   </body>
 </html>
