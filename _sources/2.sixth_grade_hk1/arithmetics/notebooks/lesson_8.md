@@ -1,9 +1,22 @@
-# Ước chung. Ước chung lớn nhất
-## Ước chung. Ước chung lớn nhất (ngắn gọn)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K3IWaMuMVkw?si=fMY_DW4cRpYV2ELm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+# Số nguyên tố. Hợp số. Phân tích một số ra thừa số nguyên tố
 
-## Ước chung. Ước chung lớn nhất (Lí thuyết)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mWtYss5u7_s?si=NpYOHKcUoPo0YEWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Số nguyên tố. Hợp số (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3kFgP9K8J6Y?si=ncjY20B-5jwo41bF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Ước chung. Ước chung lớn nhất (Bài tập)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kIAqExYW9HI?si=0LpV9naA6yh1kvJ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Số nguyên tố. Hợp số (Lí thuyết)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g4Hd5QjEtsg?si=nqEWAf6X58WABlUD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Số nguyên tố. Hợp số ((Bài tập)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qcMoKXoF8yI?si=S025-PU6z-1zZt2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phân tích một số ra thừa số nguyên tố (sơ đồ cây)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bdg1A87akoU?si=0g7TJika8bIVivTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phân tích một số ra thừa số nguyên tố (sơ đồ cột)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tGal-DE-ZDE?si=lo_yeCRtosu2uMi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phân tích một số ra thừa số nguyên tố (Lí thuyết)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jWZOjhFwLG0?si=4Csg38zavvMg_mf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phân tích một số ra thừa số nguyên tố (Bài tập)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZNHhJb7EI0?si=GQwLyuONilaQj6OW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
