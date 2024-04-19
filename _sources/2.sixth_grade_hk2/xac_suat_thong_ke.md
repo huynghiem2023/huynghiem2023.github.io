@@ -1,2 +1,2 @@
-# Xấc suất thống kê
+# Xác Suất Thống Kê
 
