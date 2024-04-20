@@ -1,9 +1,11 @@
-# Hai đường thẳng song song
-### Học theo sách CTST không có phần cặp góc trong cùng phía.(Lí thuyết) 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xImBVXmRrNU?si=I8sfa2Z_RAndCF7O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+# Sự đồng qui của ba đường trung trực ba đường cao của một tam giác
+## Sự đồng qui của ba đường trung trực - Lí thuyết
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q22jw6ztaps?si=HuMlSxV6XvIqO38j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Hai đường thẳng song song (Bài tập)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dOAhj7vlqTU?si=qyGKG7JrO4kuSfvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Sự đồng qui của ba đường cao của một tam giác - Lí thuyết
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vwYeG-29qrA?si=BHM3IksSdP0qM33B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Sự đồng qui của ba đường trung trực ba đường cao của một tam giác - Bài tập
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zqzp26V5fjQ?si=vqGJVd8yScbweDEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 

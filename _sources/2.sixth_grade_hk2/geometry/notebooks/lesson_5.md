@@ -1,9 +1,6 @@
-# Đoạn thẳng. Độ dài đoạn thẳng
-## Đoạn thẳng. Độ dài đoạn thẳng (ngắn gọn)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e2TMFugtOMw?si=UAVzu4ZVNPrze1JS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+# Điểm. Đường thẳng
+## Điểm. Đường thẳng (Lí thuyết)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qoDjFpYO2XE?si=UcU6-EMNgQ5_98Ni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Đoạn thẳng. Độ dài đoạn thẳng (Lí thuyết)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cyVldUbjE2c?si=AGydrafwp1EyNE_D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-## Đoạn thẳng. Độ dài đoạn thẳng (Bài tập)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IbjxQtwlmmQ?si=oABZYiB2kj00MVTN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Điểm. Đường thẳng (Bài tập)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SnY4Evh0EE0?si=GzAFpbGv84KFCbnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
