@@ -1,4 +1,13 @@
 # Hình chữ nhật. Hình vuông
+## Hình chữ nhật - Tính chất (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WdZIdO27qgQ?si=AiOjfJA2O7vVAbmb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Hình chữ nhật - Dấu hiệu nhận biết (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EteHSBXsUGU?si=CBpAfBR67Cg6BO5d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Hình vuông - Tính chất và DHNB (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ko2NQsqXnt8?si=fLHWyORu-XfCyhN5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Hình chữ nhật (Lí thuyết)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WdZIdO27qgQ?si=lh71xOxvyyLG-Xao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
