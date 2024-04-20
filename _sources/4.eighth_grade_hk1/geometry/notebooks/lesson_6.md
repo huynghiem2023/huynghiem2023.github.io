@@ -1,4 +1,10 @@
 # Hình thang - Hình thang cân
+## Hình thang - Hình thang cân (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N18ly6C9cxY?si=sm88J9H1hUTj1uL1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Tính chất hình thang cân (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uuHHZ_8sBf8?si=_OJjGB3WXa4Zi7Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Hình thang - Hình thang cân (Lí thuyết)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zjYQiDYG-ck?si=e-euhZhR0RkM3FSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
