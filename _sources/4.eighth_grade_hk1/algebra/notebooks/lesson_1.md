@@ -1,4 +1,7 @@
 # Đơn thức và đa thức nhiều biến
+## Đơn thức và đa thức nhiều biến (ngắn gọn)
+
+
 ## Đơn thức và đa thức nhiều biến (tiết 1)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qjnOGtlFQs4?si=Hnsa8HOZrPuCsk43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

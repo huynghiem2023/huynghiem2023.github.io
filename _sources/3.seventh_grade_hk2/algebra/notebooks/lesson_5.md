@@ -1,6 +1,15 @@
 # Phép công, trừ đa thức một biến
-## Phép công, trừ đa thức một biến (Lí thuyết)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/byEprGZBjgo?si=Sq16IML9ygT4ZPAN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Phép công đa thức một biến (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g_l3VOEdrgI?si=kVCkxrv3Zs1_mfhu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Phép công, trừ đa thức một biến (Bài tập)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YRJSc5tttDc?si=T3jMq5CY_-mjv6_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Phép trừ đa thức một biến (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VjrvdwBCBig?si=uS49pvkjCiZGSkbG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phép công, trừ đa thức một biến (CTST) - Tiết 1
+<iframe width="560" height="315" src="https://www.youtube.com/embed/byEprGZBjgo?si=HT0bIofn89H5Z6tT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phép công, trừ đa thức một biến (CTST) - Tiết 2
+<iframe width="560" height="315" src="https://www.youtube.com/embed/noj0BJUeHjs?si=rf0uJ7i-cwQgl8BO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Phép công, trừ đa thức một biến (CTST) - Tiết 3
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TwgB-gCSGJ0?si=hng_m97ucuOvcHQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
