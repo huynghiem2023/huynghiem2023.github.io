@@ -1,4 +1,10 @@
 # Xác suất lí thuyết và xác suất thực nghiệm
+## Xác suất thực nghiệm (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ebEhZcFihUM?si=XhpKKUYChUlzZk3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Ước lượng xác suất của biến cố thông qua xác suất thực nghiệm (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gd5o2hvUuNw?si=HrBLEniTEEVesUaX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Xác suất lí thuyết và xác suất thực nghiệm (Lí thuyết)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gischg92jvw?si=gmyvrNbSKsIj7ZZt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

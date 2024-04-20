@@ -1,4 +1,10 @@
 # Mô tả xác suất bằng tỉ số
+## Cách tính xác suất của biến cố bằng tỉ số (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPVsbG-kdrk?si=wUxeEH_Vr-anieP7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Thực hành tính xác suất của biến cố bằng tỉ số (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vuvfT-GP170?si=xOHms2higRfZtnsd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Mô tả xác suất bằng tỉ số (Giới thiệu))
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPVsbG-kdrk?si=hy07GB1Oh4SeP9z1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
