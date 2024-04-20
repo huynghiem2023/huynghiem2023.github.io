@@ -1,4 +1,4 @@
-# CÁC PHÉP TÍNH VỚI SỐ HỮU TỈ 
+# Các phép tính với số hữu tỉ 
 ## Cách cộng, trừ hai số hữu tỉ (ngắn gọn)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WbchigLIXhI?si=R3Q-XChkBdz7RNHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
