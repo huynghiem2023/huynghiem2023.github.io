@@ -1,4 +1,16 @@
 # Định lí Thalès trong tam giác
+## Đoạn thẳng tỉ lệ (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DFmZT_ahSo8?si=QLXMx1IcuJzp5DGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Định lí Thalès trong tam giác (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wWHV38xxgzo?si=IFTYR01Gg8aoGtiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Định lí Thalès đảo trong tam giác (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vlPctdtpC8U?si=5V5dVRgQivsqGKqe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Hệ quả định lí Thalès trong tam giác (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KaP4tynIicc?si=qCShmVkllE1IRsnh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Định lí Thalès trong tam giác (Lí thuyết)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wWHV38xxgzo?si=oZQL_0JW_YrIu1Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

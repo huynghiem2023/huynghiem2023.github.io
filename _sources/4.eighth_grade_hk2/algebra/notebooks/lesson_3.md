@@ -1,4 +1,7 @@
 # Hàm số bậc nhất y = ax + b (a ¹ 0)
+# Hàm số bậc nhất y = ax + b (a ¹ 0) (ngắn gọn)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aRAVAEMuxu0?si=04ICTHYCKbETssod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 1)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s5Bj_5SEAp4?si=Cu5-XRYngLtmFnM9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
