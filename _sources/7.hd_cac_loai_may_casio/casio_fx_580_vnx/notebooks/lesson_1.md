@@ -29,7 +29,6 @@
 ##  Lớp 8 và 9 - Hằng đẳng thức bình phương một tổng trên máy tính
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5P6iESLIfoA?si=mkL-fsLwr6Yz3PKq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ## Lớp 8 và 9 - Lập bảng giá trị hàm số
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mPjrXkUfIHQ?si=Po8A673SlWCgYUtC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
