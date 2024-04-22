@@ -1,4 +1,4 @@
-# Sử dụng máy Casio fx-880BTG
+# Sử dụng máy Casio fx-880 BTG
 
 ## Máy tính CASIO fx 880 BTG có gì mới?
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7vcfy8ZdJmA?si=8hxjRe5yBevZXoC9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
