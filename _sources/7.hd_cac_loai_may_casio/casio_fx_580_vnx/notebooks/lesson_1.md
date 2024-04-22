@@ -20,8 +20,6 @@
 ## Lớp 6 và 7 - Phép trừ phân số 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D68Ag4LOLxI?si=8TFMsnquFmSr0j-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-##  Lớp 7 - 
-
 ## Lớp 8 _ Cách nhân đa thức trên máy tính 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/a2NrtiwnBtQ?si=Ugm9j2EaUnBphQDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
