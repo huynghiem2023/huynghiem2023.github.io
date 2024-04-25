@@ -1,3 +1,3 @@
-# Bài số 2
+# Phương trình bậc nhất hai ẩn và HPT bậc nhất hai ẩn
+## # Phương trình bậc nhất hai ẩn và HPT bậc nhất hai ẩn
 
-Test bài số 2
