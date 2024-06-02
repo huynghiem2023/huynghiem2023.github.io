@@ -1,116 +1,435 @@
-<!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3. Hàm số bậc nhất y = ax + b (a ¹ 0) &mdash; My Journal</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/sphinx-thebe.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Hàm số bậc nhất y = ax + b (a ¹ 0) &#8212; My Journal</title>
   
-        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
-        <script src="../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
-        <script src="../../../_static/copybutton.js?v=f281be69"></script>
-        <script src="../../../_static/scripts/sphinx-book-theme.js"></script>
-        <script>let toggleHintShow = 'Click to show';</script>
-        <script>let toggleHintHide = 'Click to hide';</script>
-        <script>let toggleOpenOnPrint = 'true';</script>
-        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
-        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script src="../../../_static/design-tabs.js?v=36754332"></script>
-        <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-        <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
-        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script src="../../../_static/js/theme.js"></script>
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-D3SK1PZ4FM"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-D3SK1PZ4FM');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-D3SK1PZ4FM');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '4.eighth_grade_hk2/algebra/notebooks/lesson_3';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="5. Hệ số góc của đường thẳng" href="lesson_4.html" />
-    <link rel="prev" title="2. Toạ độ của một điểm và đồ thị của hàm số" href="lesson_2.html" /> 
-</head>
+    <link rel="prev" title="2. Toạ độ của một điểm và đồ thị của hàm số" href="lesson_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-          
-          
-          <a href="../../../intro.html" class="icon icon-home">
-            Python
-              <img src="../../../_static/mr.huy.png" class="logo" alt="Logo"/>
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">TKB lớp thầy Huy</span></p>
-<ul>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/mr.huy.png" class="logo__image only-light" alt="My Journal - Home"/>
+    <script>document.write(`<img src="../../../_static/mr.huy.png" class="logo__image only-dark" alt="My Journal - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">TKB lớp thầy Huy</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../1.journal/2024/20240201.html">Thời Khóa Biểu</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 6 HK I</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics.html">Số học</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry.html">Hình học</a></li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 6 HK I</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics.html">Số học</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_1.html">1. Tập hợp - Phần tử của tập hợp - Tập hợp số tự nhiên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_2.html">2. Ghi số tự nhiên - Các phép tính trên số tự nhiên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_3.html">3. Luỹ thừa với số mũ tự nhiên - Nhân chia 2 lũy thừa có cùng cơ s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_4.html">4. Thứ tự thực hiện phép tính</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_5.html">5. Chia hết và chia có dư -  Tính chất chia hết của một tổng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_6.html">6. Bài số 5 - Dấu hiệu chia hết cho 2, 5, 3, 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_7.html">7. Ước và Bội</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_8.html">8. Số nguyên tố. Hợp số. Phân tích một số ra thừa số nguyên tố</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_9.html">9. Ước chung. Ước chung lớn nhất</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_10.html">10. Bội chung. Bội chung nhỏ nhất</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_11.html">11. Bài tập cuối chương 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_12.html">12. Tập hợp số nguyên và thứ tự trong Z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_13.html">13. Phép cộng - Phép trừ hai số nguyên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_14.html">14. Phép nhân và phép chia hết hai số nguyên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_15.html">15. Luyện tập chung các phép tinh về số nguyên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_16.html">16. Tìm hiểu về phân số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_17.html">17. So sánh phân số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/arithmetics/notebooks/lesson_18.html">18. Sử dụng máy tính Casio FX</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 7 HK I</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra.html">Đại số</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry.html">Hình học</a></li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.html">1. Thu thập và phân loại dữ liệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.html">2. Biểu diễn dữ liệu trên bảng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_3.html">3. Biểu đồ tranh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_4.html">4. Biểu đồ cột - Biểu đồ cột kép</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 8 HK I</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra.html">Đại số</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../4.eighth_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry.html">Hình học</a></li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry/notebooks/lesson_1.html">1. Hình vuông - Tam giác đều và Lục giác đều</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry/notebooks/lesson_2.html">2. Hình chữ nhật, hình thoi, hình bình hành, hình thang cân</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry/notebooks/lesson_3.html">3. Luyện tập chung chương 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry/notebooks/lesson_4.html">4. Chu vi và diện tích một số hình trong thực tế</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk1/geometry/notebooks/lesson_5.html">5. Bài tập cuối chương 3</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 9 HK I</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../5.ninth_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../5.ninth_grade_hk1/algebra.html">Đại số</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../5.ninth_grade_hk1/geometry.html">Hình học</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt.html">Toán thực tế</a></li>
+</li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 6 HK II</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics.html">Số học</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk2/xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry.html">Hình học</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2.sixth_grade_hk2/ttt.html">Toán thực tế</a></li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 7 HK I</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra.html">Đại số</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_1.html">1. Các vấn đề về tập hợp số hữu ti Q</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_2.html">2. Các phép tính với số hữu tỉ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_3.html">3. Lũy thừa của một số hữu tỉ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_4.html">4. Quy tắc dấu ngoặc và quy tắc chuyển vế</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_5.html">5. Thứ tự thực hiện các phép tính</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_6.html">6. Bài tập cuối chương 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_7.html">7. Làm quen với số thập phân vô hạn tuần hoàn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_8.html">8. Số vô tỉ. Căn bậc hai số học</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_9.html">9. Tập hợp các số thực</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/algebra/notebooks/lesson_10.html">10. Bài tập cuối chương 2</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 7 HK II</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra.html">Đại số</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk2/xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry.html">Hình học</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../3.seventh_grade_hk2/ttt.html">Toán thực tế</a></li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.html">1. Thu thập và phân loại dữ liệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.html">2. Biểu đồ hình quạt tròn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_3.html">3. Biểu đồ đoạn thẳng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_4.html">4. Bài tập cuối chương 5</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 8 HK II</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../../algebra.html">Đại số</a><ul class="current">
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_1.html">1. Hình hộp chữ nhật  - Hình lập phương</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_2.html">2. Hình lăng trụ đứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_3.html">3. Các góc ở vị trí đặc biệt (HÌNH HỌC PHẲNG)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_4.html">4. Tia phân giác của một góc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_5.html">5. Hai đường thẳng song song và dấu hiệu nhận biết</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_7.html">6. Định lí và chứng minh định lí</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_8.html">7. Bài tập cuối chương 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_9.html">8. Tổng các góc của một tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_10.html">9. Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất của tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_11.html">10. Các trường hợp bằng nhau của tam giác vuông</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk1/geometry/notebooks/lesson_12.html">11. Tam giác cân. Đường trung trực của đoạn thẳng</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 8 HK I</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra.html">Đại số</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_1.html">1. Đơn thức và đa thức nhiều biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_2.html">2. Các phép toán với đa thức nhiều biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_3.html">3. Hằng đẳng thức đáng nhớ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_4.html">4. Phân tích đa thức thành nhân tử</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_5.html">5. Ôn tâp nâng cao phân tích đa thức thành nhân tủ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_6.html">6. Phân thức đại số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_7.html">7. Cộng, trừ phân thức</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_8.html">8. Nhân, chia phân thức đại số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_9.html">9. Bài tập cuối chương 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/algebra/notebooks/lesson_10.html">10. Ôn tập cuối kì I</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../4.eighth_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.html">1. Thu thập và phân loại dữ liệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.html">2. Lựa chọn dạng biểu đồ để biểu diễn dữ liệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_3.html">3. Phân tích dữ liệu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_4.html">4. Bài tập cuối chương 4</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_1.html">1. Các hình khối trong thực tiễn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_2.html">2. Diện tích xung quanh và thể tích của hình chóp tam giác đều</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_3.html">3. Bài tập cuối chương 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_4.html">4. Định lí Pythagore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_5.html">5. Tứ giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_6.html">6. Hình thang - Hình thang cân</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_7.html">7. Hình bình hành. Hình thoi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_8.html">8. Hình chữ nhật. Hình vuông</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../4.eighth_grade_hk1/geometry/notebooks/lesson_9.html">9. Ôn tập cuối chương 3</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 9 HK I</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../5.ninth_grade_hk1/xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.html">1. Bài số 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.html">2. Bài số 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../5.ninth_grade_hk1/algebra.html">Đại số</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/algebra/notebooks/lesson_1.html">1. Phương trình quy về phương trình bậc nhất một ẩn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/algebra/notebooks/lesson_2.html">2. Phương trình bậc nhất hai ẩn và HPT bậc nhất hai ẩn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/algebra/notebooks/lesson_3.html">3. Giải HPT bậc nhất hai ẩn</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../5.ninth_grade_hk1/geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/geometry/notebooks/lesson_1.html">1. Bài số 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/geometry/notebooks/lesson_2.html">2. Bài số 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_1.html">1. BỘI CHUNG NHỎ NHẤT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_10.html">2. Vận dụng công thức diện tích tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_11.html">3. Giải toán thực tế bằng cách lập phương trình bậc hai</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_12.html">4. Rèn luyện kĩ năng phân tích đề toán</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_13.html">5. Chu vi và diện tích hình tròn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_14.html">6. Tam giác đồng dạng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_15.html">7. Kĩ thuật dùng ẩn số tạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_16.html">8. Diện tích đa giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_17.html">9. Bài toán tính tuổi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_18.html">10. Bài toán về đại lương tỉ tệ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_19.html">11. Nồng độ dung dịch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_2.html">12. Phương trình nghiệm nguyên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_20.html">13. Tính tiền nước</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_21.html">14. Tính tiền điện</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_22.html">15. Tính tiền cước điện thoại , taxi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_23.html">16. So sánh giá cả</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_24.html">17. Giá trị lớn nhất - Giá trị nhỏ nhất</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_3.html">18. Hình hộp chữ nhật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_4.html">19. Giải toán bằng cách lập hê phương trình</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_5.html">21. Tỉ số phần trăm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_6.html">22. Giải bài toán bằng cách lập phương trình bậc nhất có một ẩn số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_7.html">23. Tìm ngày tháng - Kĩ năng đọc hiểu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_8.html">24. Dùng tỉ số lượng giác để giải toán thực tế</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk1/ttt/notebooks/lesson_9.html">25. Dùng định lí Pythagore để giải toán thực tế</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 6 HK II</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics.html">Số học</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_1.html">1. Phép cộng và phép trừ phân số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_2.html">2. Phép nhân và phép chia phân số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_3.html">3. Giá trị phân số của một số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_4.html">4. Hỗn số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_5.html">5. Bài tập cuối chương 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_6.html">6. Số thập phân</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_7.html">7. Các phép tính với số thập phân</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_8.html">8. Làm tròn số thập phân và ước lượng kết quả</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_9.html">9. Tỉ số và tỉ số phần trăm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_10.html">10. Bài toán về tỉ số phần trăm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/arithmetics/notebooks/lesson_11.html">11. Bài tập cuối chương 6</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk2/xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_1.html">1. Phép thử nghiệm – Sự kiện</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_3.html">2. Bài tập cuối chương 9</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_1.html">1. Hình có trục đối xứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_2.html">2. Hình có tâm đối xứng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_3.html">3. Vai trò của tính đối xứng trong thế giới tự nhiên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_4.html">4. Bài tập cuối chương 7 (Hình có tính đối xứng)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_5.html">5. Điểm. Đường thẳng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_6.html">6. Ba điểm thẳng hàng. Ba điểm không thẳng hàng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_7.html">7. Hai đường thẳng cắt nhau, song song. Tia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_8.html">8. Đoạn thẳng. Độ dài đoạn thẳng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_9.html">9. Trung điểm của đoạn thẳng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_10.html">10. Góc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_11.html">11. Số đo góc - Các góc đặc biệt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../2.sixth_grade_hk2/geometry/notebooks/lesson_12.html">12. Ôn tập chương 8</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../2.sixth_grade_hk2/ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 7 HK II</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra.html">Đại số</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_1.html">1. Tỉ lệ thức - Dãy tỉ số bằng nhau</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_2.html">2. Các vấn đề về đại lương tỉ lệ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_3.html">3. Biểu thức số, biểu thức đại số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_4.html">4. Đa thức một biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_5.html">5. Phép công, trừ đa thức một biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_6.html">6. Phép nhân, chia đa thức một biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/algebra/notebooks/lesson_7.html">7. Bài tập cuối chương 7</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk2/xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/lesson_1.html">1. Làm quen với biến cố ngẫu nhiên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/lesson_2.html">2. Làm quen với xác xuất của biến cố ngẫu nhiên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/lesson_3.html">3. Ôn tập chương 9</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry/notebooks/lesson_1.html">1. Quan hệ giữa góc và cạnh đối diện trong tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry/notebooks/lesson_2.html">2. Quan hệ giữa đường vuông góc và đường xiên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry/notebooks/lesson_3.html">3. Quan hệ giữa các cạnh trong tam giác. Bất đẳng thức tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry/notebooks/lesson_4.html">4. Sự đồng qui của ba đường trung tuyến ba đường phân giác của một tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/geometry/notebooks/lesson_5.html">5. Sự đồng qui của ba đường trung trực ba đường cao của một tam giác</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../3.seventh_grade_hk2/ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/ttt/notebooks/lesson_1.html">1. Bài số 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../3.seventh_grade_hk2/ttt/notebooks/lesson_2.html">2. Bài số 2</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 8 HK II</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../algebra.html">Đại số</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="lesson_1.html">1. Khái niệm hàm số</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson_2.html">2. Toạ độ của một điểm và đồ thị của hàm số</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Hàm số bậc nhất y = ax + b (a ¹ 0)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ham-so-bac-nhat-y-ax-b-a-1-0-ngan-gon">4. Hàm số bậc nhất y = ax + b (a ¹ 0) (ngắn gọn)</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3. Hàm số bậc nhất y = ax + b (a ¹ 0)</a></li>
+
 <li class="toctree-l2"><a class="reference internal" href="lesson_4.html">5. Hệ số góc của đường thẳng</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson_5.html">6. Bài tập cuối chương 5</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lesson_6.html">7. Phương trình bậc nhất một ẩn</a></li>
@@ -118,66 +437,314 @@
 <li class="toctree-l2"><a class="reference internal" href="lesson_8.html">9. Bài tập cuối chương 6</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../xac_suat_thong_ke.html">Xác Suất Thống Kê</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../geometry.html">Hình học</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../xac_suat_thong_ke.html">Xác Suất Thống Kê</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../xac_suat_thong_ke/notebooks/lesson_1.html">1. Mô tả xác suất bằng tỉ số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../xac_suat_thong_ke/notebooks/lesson_2.html">2. Xác suất lí thuyết và xác suất thực nghiệm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../xac_suat_thong_ke/notebooks/lesson_3.html">3. Bài tập cuối chương 9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../xac_suat_thong_ke/notebooks/lesson_1.html">1. Mô tả xác suất bằng tỉ số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../xac_suat_thong_ke/notebooks/lesson_2.html">2. Xác suất lí thuyết và xác suất thực nghiệm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../xac_suat_thong_ke/notebooks/lesson_3.html">3. Bài tập cuối chương 9</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Lớp 9 HK II</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt.html">Toán thực tế</a></li>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../geometry.html">Hình học</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_1.html">1. Định lí Thalès trong tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_2.html">2. Đường trung bình của tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_3.html">3. Tính chất đường phân giác trong tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_4.html">4. Bài tập cuối chương 7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_5.html">5. Hai tam giác đồng dạng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_6.html">6. Các trường hợp đồng dạng của hai tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_7.html">7. Các trường hợp đồng dạng của hai tam giác vuông</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_8.html">8. Hai hình đồng dạng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../geometry/notebooks/lesson_9.html">9. Bài tập cuối chương 8</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">6.hd_giai_ts10</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../6.hd_giai_ts10/chu_de_ttt.html">Toán thực tế</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../6.hd_giai_ts10/toan_ko_chuyen_ptnk.html">Toán không chuyên TS 10 PTNK TP HCM</a></li>
+</li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">7.hd_cac_loai_may_casio</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_570_es_plus.html">Sử dụng máy Casio fx-570 ES PLUS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_580_vnx.html">Sử dụng máy Casio fx-580 VNX</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_880_btg.html">Sử dụng máy Casio fx-880 BTG</a></li>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lớp 9 HK II</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_1.html">1. BộI CHUNG NHỎ NHẤT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_10.html">2. Vận dụng công thức diện tích tam giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_11.html">3. Giải toán thực tế bằng cách lập phương trình bậc hai</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_12.html">4. Rèn luyện kĩ năng phân tích đề toán</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_13.html">5. Chu vi và diện tích hình tròn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_14.html">6. Tam giác đồng dạng</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_15.html">7. Kĩ thuật dùng ẩn số tạm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_16.html">8. Diện tích đa giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_17.html">9. Bài toán tính tuổi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_18.html">10. Bài toán về đại lương tỉ tệ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_19.html">11. Nồng độ dung dịch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_2.html">12. Phương trình nghiệm nguyên</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_20.html">13. Tính tiền nước</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_21.html">14. Tính tiền điện</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_22.html">15. Tính tiền cước điện thoại , taxi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_23.html">16. So sánh giá cả</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_24.html">17. Giá trị lớn nhất - Giá trị nhỏ nhất</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_3.html">18. Hình hộp chữ nhật</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_4.html">19. Giải toán bằng cách lập hê phương trình</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_5.html">21. Tỉ số phần trăm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_6.html">22. Giải bài toán bằng cách lập phương trình bậc nhất có một ẩn số</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_7.html">23. Tìm ngày tháng - Kĩ năng đọc hiểu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_8.html">24. Dùng tỉ số lượng giác để giải toán thực tế</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../5.ninth_grade_hk2/ttt/notebooks/lesson_9.html">25. Dùng định lí Pythagore để giải toán thực tế</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">6.hd_giai_ts10</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../6.hd_giai_ts10/chu_de_ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../6.hd_giai_ts10/chu_de_ttt/notebooks/lesson_1.html">1. TOÁN THỰC TẾ TS 10 TP HCM 2024-2025</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../6.hd_giai_ts10/toan_ko_chuyen_ptnk.html">Toán không chuyên TS 10 PTNK TP HCM</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/lesson_1.html">1. Giải đề NH 2022-2023</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">7.hd_cac_loai_may_casio</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_570_es_plus.html">Sử dụng máy Casio fx-570 ES PLUS</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_570_es_plus/notebooks/lesson_1.html">1. Sử dụng máy Casio fx-570 ES PLUS</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_580_vnx.html">Sử dụng máy Casio fx-580 VNX</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_580_vnx/notebooks/lesson_1.html">1. Sử dụng máy tính Casio FX - 580VNX</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_880_btg.html">Sử dụng máy Casio fx-880 BTG</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-30"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/lesson_1.html">1. Sử dụng máy Casio fx-880 BTG</a></li>
+</ul>
+</li>
 </ul>
 
-        </div>
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
       </div>
-    </nav>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../intro.html">Python</a>
-      </nav>
+<div class="sbt-scroll-pixel-helper"></div>
 
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="../../../intro.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../algebra.html">Đại số</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">3. </span>Hàm số bậc nhất y = ax + b (a ¹ 0)</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/4.eighth_grade_hk2/algebra/notebooks/lesson_3.md" rel="nofollow"> View page source</a>
-      </li>
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/huynghiem2023/huynghiem2023.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/huynghiem2023/huynghiem2023.github.io/issues/new?title=Issue%20on%20page%20%2F4.eighth_grade_hk2/algebra/notebooks/lesson_3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
   </ul>
-  <hr/>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/4.eighth_grade_hk2/algebra/notebooks/lesson_3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Hàm số bậc nhất y = ax + b (a ¹ 0)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3. Hàm số bậc nhất y = ax + b (a ¹ 0)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-ngan-gon">4. Hàm số bậc nhất y = ax + b (a ¹ 0) (ngắn gọn)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-1">4.1. Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-2">4.2. Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-bai-tap">4.3. Hàm số bậc nhất y = ax + b (a ¹ 0) (Bài tập)</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="ham-so-bac-nhat-y-ax-b-a-1-0">
-<h1><span class="section-number">3. </span>Hàm số bậc nhất y = ax + b (a ¹ 0)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0" title="Link to this heading"></a></h1>
+<h1><span class="section-number">3. </span>Hàm số bậc nhất y = ax + b (a ¹ 0)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0" title="Link to this heading">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="ham-so-bac-nhat-y-ax-b-a-1-0-ngan-gon">
-<h1><span class="section-number">4. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (ngắn gọn)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-ngan-gon" title="Link to this heading"></a></h1>
+<h1><span class="section-number">4. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (ngắn gọn)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-ngan-gon" title="Link to this heading">#</a></h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aRAVAEMuxu0?si=04ICTHYCKbETssod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <section id="ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-1">
-<h2><span class="section-number">4.1. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 1)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-1" title="Link to this heading"></a></h2>
+<h2><span class="section-number">4.1. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 1)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-1" title="Link to this heading">#</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s5Bj_5SEAp4?si=Cu5-XRYngLtmFnM9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section id="ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-2">
-<h2><span class="section-number">4.2. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 2)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-2" title="Link to this heading"></a></h2>
+<h2><span class="section-number">4.2. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 2)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-2" title="Link to this heading">#</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1eSJ7_IDqZ0?si=3sG1GRWzJNaFJIYd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 <section id="ham-so-bac-nhat-y-ax-b-a-1-0-bai-tap">
-<h2><span class="section-number">4.3. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (Bài tập)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-bai-tap" title="Link to this heading"></a></h2>
+<h2><span class="section-number">4.3. </span>Hàm số bậc nhất y = ax + b (a ¹ 0) (Bài tập)<a class="headerlink" href="#ham-so-bac-nhat-y-ax-b-a-1-0-bai-tap" title="Link to this heading">#</a></h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xne4xK-glHA?si=U2-QJkPGW3qGTwDZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 </section>
@@ -202,34 +769,110 @@
     </script>
     <script>kernelName = 'python3'</script>
 
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="lesson_2.html" class="btn btn-neutral float-left" title="2. Toạ độ của một điểm và đồ thị của hàm số" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="lesson_4.html" class="btn btn-neutral float-right" title="5. Hệ số góc của đường thẳng" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+                </article>
+              
 
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2023.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lesson_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Toạ độ của một điểm và đồ thị của hàm số</p>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </a>
+    <a class="right-next"
+       href="lesson_4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Hệ số góc của đường thẳng</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-</body>
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3. Hàm số bậc nhất y = ax + b (a ¹ 0)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-ngan-gon">4. Hàm số bậc nhất y = ax + b (a ¹ 0) (ngắn gọn)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-1">4.1. Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-li-thuyet-2">4.2. Hàm số bậc nhất y = ax + b (a ¹ 0) (Lí thuyết 2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ham-so-bac-nhat-y-ax-b-a-1-0-bai-tap">4.3. Hàm số bậc nhất y = ax + b (a ¹ 0) (Bài tập)</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Huy Nghiem
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
 </html>
