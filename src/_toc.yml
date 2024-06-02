@@ -4,77 +4,378 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Huy Nghiem's Journal
-    title: Huy Nghiem's Journal
+  - caption: TKB lớp thầy Huy
+    title: TKB lớp thầy Huy
     expand_sections: true
     chapters:
       - glob: 1.journal/2024/*
-  - caption: Lớp 6
+  - caption: Lớp 6 HK I
+    expand_sections: false
     chapters:
-    - file: 2.sixth_grade/arithmetics
+    - file: 2.sixth_grade_hk1/arithmetics
       options:
         numbered: true
       sections:
-      - glob: 2.sixth_grade/arithmetics/notebooks/*
-    - file: 2.sixth_grade/algebra
+      # - glob: 2.sixth_grade_hk1/arithmetics/notebooks/*
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_1.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_2.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_3.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_4.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_5.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_6.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_7.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_8.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_9.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_10.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_11.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_12.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_13.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_14.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_15.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_16.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_17.md
+      - file: 2.sixth_grade_hk1/arithmetics/notebooks/lesson_18.md
+    - file: 2.sixth_grade_hk1/xac_suat_thong_ke
       options:
         numbered: true
       sections:
-      - glob: 2.sixth_grade/algebra/notebooks/*
-    - file: 2.sixth_grade/geometry
+      # - glob: 2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/*
+      - file: 2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.md
+      - file: 2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.md
+      - file: 2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_3.md
+      - file: 2.sixth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_4.md
+    - file: 2.sixth_grade_hk1/geometry
       options:
         numbered: true
       sections:
-      - glob: 2.sixth_grade/geometry/notebooks/*
-  - caption: Lớp 7
+      # - glob: 2.sixth_grade_hk1/geometry/notebooks/*
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_1.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_2.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_3.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_4.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_5.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_6.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_7.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_8.md
+      - file: 2.sixth_grade_hk1/geometry/notebooks/lesson_9.md
+    # - file: 2.sixth_grade_hk1/ttt
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 2.sixth_grade_hk1/ttt/notebooks/*
+  - caption: Lớp 7 HK I
     chapters:
-    - file: 3.seventh_grade/arithmetics
+    - file: 3.seventh_grade_hk1/algebra
       options:
         numbered: true
       sections:
-      - glob: 3.seventh_grade/arithmetics/notebooks/*
-    - file: 3.seventh_grade/algebra
+      # - glob: 3.seventh_grade_hk1/algebra/notebooks/*
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_1.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_2.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_3.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_4.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_5.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_6.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_7.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_8.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_9.md
+      - file: 3.seventh_grade_hk1/algebra/notebooks/lesson_10.md
+    - file: 3.seventh_grade_hk1/xac_suat_thong_ke
       options:
         numbered: true
       sections:
-      - glob: 3.seventh_grade/algebra/notebooks/*
-    - file: 3.seventh_grade/geometry
+      # - glob: 3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/*
+      - file: 3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.md
+      - file: 3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.md
+      - file: 3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_3.md
+      - file: 3.seventh_grade_hk1/xac_suat_thong_ke/notebooks/lesson_4.md
+    - file: 3.seventh_grade_hk1/geometry
       options:
         numbered: true
       sections:
-      - glob: 3.seventh_grade/geometry/notebooks/*
-  - caption: Lớp 8
+      # - glob: 3.seventh_grade_hk1/geometry/notebooks/*
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_1.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_2.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_3.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_4.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_5.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_6.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_7.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_8.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_9.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_10.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_11.md
+      - file: 3.seventh_grade_hk1/geometry/notebooks/lesson_12.md
+    # - file: 3.seventh_grade_hk1/ttt
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 3.seventh_grade_hk1/ttt/notebooks/*
+  - caption: Lớp 8 HK I
     chapters:
-    - file: 4.eighth_grade/arithmetics
+    - file: 4.eighth_grade_hk1/algebra
       options:
         numbered: true
       sections:
-      - glob: 4.eighth_grade/arithmetics/notebooks/*
-    - file: 4.eighth_grade/algebra
+      # - glob: 4.eighth_grade_hk1/algebra/notebooks/*
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_1.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_2.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_3.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_4.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_5.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_6.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_7.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_8.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_9.md
+      - file: 4.eighth_grade_hk1/algebra/notebooks/lesson_10.md
+    - file: 4.eighth_grade_hk1/xac_suat_thong_ke
       options:
         numbered: true
       sections:
-      - glob: 4.eighth_grade/algebra/notebooks/*
-    - file: 4.eighth_grade/geometry
+      # - glob: 4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/*
+      - file: 4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_1.md
+      - file: 4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_2.md
+      - file: 4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_3.md
+      - file: 4.eighth_grade_hk1/xac_suat_thong_ke/notebooks/lesson_4.md
+    - file: 4.eighth_grade_hk1/geometry
       options:
         numbered: true
       sections:
-      - glob: 4.eighth_grade/geometry/notebooks/*
-  - caption: Lớp 9
+      # - glob: 4.eighth_grade_hk1/geometry/notebooks/*
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_1.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_2.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_3.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_4.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_5.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_6.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_7.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_8.md
+      - file: 4.eighth_grade_hk1/geometry/notebooks/lesson_9.md
+    # - file: 4.eighth_grade_hk1/ttt
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 4.eighth_grade_hk1/ttt/notebooks/*
+  - caption: Lớp 9 HK I
     chapters:
-    - file: 5.ninth_grade/arithmetics
+    # - file: 5.ninth_grade_hk1/xac_suat_thong_ke
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 5.ninth_grade_hk1/xac_suat_thong_ke/notebooks/*
+    # - file: 5.ninth_grade_hk1/algebra
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 5.ninth_grade_hk1/algebra/notebooks/*
+    # - file: 5.ninth_grade_hk1/geometry
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 5.ninth_grade_hk1/geometry/notebooks/*
+    - file: 5.ninth_grade_hk1/ttt
       options:
         numbered: true
       sections:
-      - glob: 5.ninth_grade/arithmetics/notebooks/*
-    - file: 5.ninth_grade/algebra
+      - glob: 5.ninth_grade_hk1/ttt/notebooks/*
+  - caption: Lớp 6 HK II
+    chapters:
+    - file: 2.sixth_grade_hk2/arithmetics
       options:
         numbered: true
       sections:
-      - glob: 5.ninth_grade/algebra/notebooks/*
-    - file: 5.ninth_grade/geometry
+      # - glob: 2.sixth_grade_hk2/arithmetics/notebooks/*
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_1.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_2.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_3.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_4.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_5.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_6.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_7.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_8.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_9.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_10.md
+      - file: 2.sixth_grade_hk2/arithmetics/notebooks/lesson_11.md
+    - file: 2.sixth_grade_hk2/xac_suat_thong_ke
       options:
         numbered: true
       sections:
-      - glob: 5.ninth_grade/geometry/notebooks/*
-    
+      # - glob: 2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/*
+      - file: 2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_1.md
+      - file: 2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_2.md
+      - file: 2.sixth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_3.md
+    - file: 2.sixth_grade_hk2/geometry
+      options:
+        numbered: true
+      sections:
+      # - glob: 2.sixth_grade_hk2/geometry/notebooks/*
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_1.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_2.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_3.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_4.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_5.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_6.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_7.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_8.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_9.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_10.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_11.md
+      - file: 2.sixth_grade_hk2/geometry/notebooks/lesson_12.md
+    - file: 2.sixth_grade_hk2/ttt
+      options:
+        numbered: true
+      sections:
+      - glob: 2.sixth_grade_hk2/ttt/notebooks/*
+  - caption: Lớp 7 HK II
+    chapters:
+    - file: 3.seventh_grade_hk2/algebra
+      options:
+        numbered: true
+      sections:
+      # - glob: 3.seventh_grade_hk2/algebra/notebooks/*
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_1.md
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_2.md
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_3.md
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_4.md
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_5.md
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_6.md
+      - file: 3.seventh_grade_hk2/algebra/notebooks/lesson_7.md
+    - file: 3.seventh_grade_hk2/xac_suat_thong_ke
+      options:
+        numbered: true
+      sections:
+      # - glob: 3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/*
+      - file: 3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/lesson_1.md
+      - file: 3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/lesson_2.md
+      - file: 3.seventh_grade_hk2/xac_suat_thong_ke/notebooks/lesson_3.md
+    - file: 3.seventh_grade_hk2/geometry
+      options:
+        numbered: true
+      sections:
+      # - glob: 3.seventh_grade_hk2/geometry/notebooks/*
+      - file: 3.seventh_grade_hk2/geometry/notebooks/lesson_1.md
+      - file: 3.seventh_grade_hk2/geometry/notebooks/lesson_2.md
+      - file: 3.seventh_grade_hk2/geometry/notebooks/lesson_3.md
+      - file: 3.seventh_grade_hk2/geometry/notebooks/lesson_4.md
+      - file: 3.seventh_grade_hk2/geometry/notebooks/lesson_5.md
+    - file: 3.seventh_grade_hk2/ttt
+      options:
+        numbered: true
+      sections:
+      - glob: 3.seventh_grade_hk2/ttt/notebooks/*
+  - caption: Lớp 8 HK II
+    chapters:
+    - file: 4.eighth_grade_hk2/algebra
+      options:
+        numbered: true
+      sections:
+      # - glob: 4.eighth_grade_hk2/algebra/notebooks/*
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_1.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_2.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_3.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_4.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_5.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_6.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_7.md
+      - file: 4.eighth_grade_hk2/algebra/notebooks/lesson_8.md
+    - file: 4.eighth_grade_hk2/xac_suat_thong_ke
+      options:
+        numbered: true
+      sections:
+      - glob: 4.eighth_grade_hk2/xac_suat_thong_ke/notebooks/*
+      - file: 4.eighth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_1.md
+      - file: 4.eighth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_2.md
+      - file: 4.eighth_grade_hk2/xac_suat_thong_ke/notebooks/lesson_3.md
+    - file: 4.eighth_grade_hk2/geometry
+      options:
+        numbered: true
+      sections:
+      # - glob: 4.eighth_grade_hk2/geometry/notebooks/*
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_1.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_2.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_3.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_4.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_5.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_6.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_7.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_8.md
+      - file: 4.eighth_grade_hk2/geometry/notebooks/lesson_9.md
+    # - file: 4.eighth_grade_hk2/ttt
+      # options:
+        # numbered: true
+      # sections:
+      # - glob: 4.eighth_grade_hk2/ttt/notebooks/*
+  - caption: Lớp 9 HK II
+    chapters:
+    # - file: 5.ninth_grade_hk2/xac_suat_thong_ke
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 5.ninth_grade_hk2/xac_suat_thong_ke/notebooks/*
+    # - file: 5.ninth_grade_hk2/algebra
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 5.ninth_grade_hk2/algebra/notebooks/*
+    # - file: 5.ninth_grade_hk2/geometry
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 5.ninth_grade_hk2/geometry/notebooks/*
+    - file: 5.ninth_grade_hk2/ttt
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade_hk2/ttt/notebooks/*
+  - caption: 6.hd_giai_ts10
+    chapters:
+    # - file: 6.hd_giai_ts10/chu_de_dai_so 
+      # options:
+        # numbered: true
+      # sections:
+      # - glob: 6.hd_giai_ts10/chu_de_dai_so/notebooks/*
+      # - file: 6.hd_giai_ts10/chu_de_dai_so/notebooks/lesson_1.md
+    # - file: 6.hd_giai_ts10/chu_de_hinh_hoc
+      # options:
+        # numbered: true
+      # sections:
+      # - glob: 6.hd_giai_ts10/chu_de_hinh_hoc/notebooks/*
+      # - file: 6.hd_giai_ts10/chu_de_hinh_hoc/notebooks/lesson_1.md
+    - file: 6.hd_giai_ts10/chu_de_ttt
+      options:
+        numbered: true
+      sections:
+      # - glob: 6.hd_giai_ts10/chu_de_ttt/notebooks/*
+      - file: 6.hd_giai_ts10/chu_de_ttt/notebooks/lesson_1.md
+    - file: 6.hd_giai_ts10/toan_ko_chuyen_ptnk
+      options:
+        numbered: true
+      sections:
+      # - glob: 6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/*
+      - file: 6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/lesson_1.md
+    # - file: 6.hd_giai_ts10/ttt_thay_huy
+    #   options:
+    #     numbered: true
+    #   sections:
+    #   - glob: 6.hd_giai_ts10/ttt_thay_huy/notebooks/*
+  - caption: 7.hd_cac_loai_may_casio
+    chapters:
+    - file: 7.hd_cac_loai_may_casio/casio_fx_570_es_plus
+      options:
+        numbered: true
+      sections:
+      # - glob: 7.hd_cac_loai_may_casio/casio_fx_570_es_plus/notebooks/*
+      - file: 7.hd_cac_loai_may_casio/casio_fx_570_es_plus/notebooks/lesson_1.md
+
+    - file: 7.hd_cac_loai_may_casio/casio_fx_580_vnx
+      options:
+        numbered: true
+      sections:
+      # - glob: 7.hd_cac_loai_may_casio/casio_fx_580_vnx/notebooks/*
+      - file: 7.hd_cac_loai_may_casio/casio_fx_580_vnx/notebooks/lesson_1.md
+    - file: 7.hd_cac_loai_may_casio/casio_fx_880_btg
+      options:
+        numbered: true
+      sections:
+      # - glob: 7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/*
+      - file: 7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/lesson_1.md

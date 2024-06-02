@@ -1,13 +1,22 @@
-# 1. Install Packages
+# 1. Create Content and Table of Contents (TOC)
 
-```sh
-pip3 install -r requirements.txt
-```
-
+- Create Content
+  - create parent folder (e.g. 'src/personal')
+  - create a child folder (e.g. 'src/personal/life')
+  - create a child title page (e.g. 'src/personal/life.md')
+  - create a content notebooks for that folder (e.g. 'src/personal/life/notebooks/lesson_1.md')
+  - create content for lesson 1 (e.g. embed videos from YouTube like section #3.2)
+  - create content for an image (![...](./images/***.png))
+- Update Table of Contents
+  - go to _toc.yml
+  - copy the code for the structure similar to existing structure
+- Deploy
+  - Refer to section #2
+  
 # 2. Deploy to GitHub Pages
 
 ```sh
-jb clean src && jb build src && ghp-import -n -p -f _build/html
+(jb clean src) -and (jb build src) -and (ghp-import -c huynghiem.com -n -p -f src/_build/html)
 ```
 
 ```PowerShell
