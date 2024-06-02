@@ -31,6 +31,8 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_multitoc_numbering: false
+  analytics:
+    google_analytics_id: G-JS9DFBCEJF
 
 sphinx:
   config:
