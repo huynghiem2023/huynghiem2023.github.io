@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Bài số 1 &#8212; My Journal</title>
+    <title>1. Chương 4: Hệ thức lượng trong tam giác vuông &#8212; My Journal</title>
   
   
   
@@ -73,7 +73,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '5.ninth_grade_hk1/geometry/notebooks/lesson_1';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="2. Bài số 2" href="lesson_2.html" />
+    <link rel="next" title="2. Hệ thức giữa các cạnh và góc của tam giác vuông" href="lesson_2.html" />
     <link rel="prev" title="Hình học" href="../../geometry.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -319,11 +319,17 @@
 <li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_5.html">5. Bài tập cuối chương 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_6.html">6. Bất đẳng thức - Bất phương trình bậc nhất một ẩn</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_7.html">7. Bài tập cuối chương 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_8.html">8. Chương 3 - Căn thức</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_9.html">9. Bài 2 - Căn bậc ba</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_10.html">10. Bài 3 - Tính chất của phép khai phương</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../algebra/notebooks/lesson_11.html">11. Bài 4 - Biến đổi đơn giản biểu thức bậc hai</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../geometry.html">Hình học</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1. Bài số 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lesson_2.html">2. Bài số 2</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1. Chương 4: Hệ thức lượng trong tam giác vuông</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_2.html">2. Hệ thức giữa các cạnh và góc của tam giác vuông</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_3.html">3. Bài tập cuối chương 4 - Tỉ số lượng giác</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lesson_4.html">4. Chương 5 - Đường tròn</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../ttt.html">Toán thực tế</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -691,7 +697,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -702,11 +710,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Bài số 1</h1>
+    <h1>Chương 4: Hệ thức lượng trong tam giác vuông</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-ngan-gon">1.1. Tỉ số lượng giác của góc nhọn (ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-hai-goc-phu-nhau-ngan-gon">1.2. Tỉ số lượng giác của hai góc phụ nhau (ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-dac-biet-ngan-gon">1.3. Tỉ số lượng giác của góc nhọn đặc biệt(ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-1">1.4. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-2">1.5. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-3">1.6. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-4">1.7. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-5">1.8. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 5</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -716,9 +739,40 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="bai-so-1">
-<h1><span class="section-number">1. </span>Bài số 1<a class="headerlink" href="#bai-so-1" title="Link to this heading">#</a></h1>
-<p>Test bài số 1</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="chuong-4-he-thuc-luong-trong-tam-giac-vuong">
+<h1><span class="section-number">1. </span>Chương 4: Hệ thức lượng trong tam giác vuông<a class="headerlink" href="#chuong-4-he-thuc-luong-trong-tam-giac-vuong" title="Link to this heading">#</a></h1>
+<section id="ti-so-luong-giac-cua-goc-nhon-ngan-gon">
+<h2><span class="section-number">1.1. </span>Tỉ số lượng giác của góc nhọn (ngắn gọn)<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-ngan-gon" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ps4wtd7VAu8?si=so40uU1AxdyCTmWF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-hai-goc-phu-nhau-ngan-gon">
+<h2><span class="section-number">1.2. </span>Tỉ số lượng giác của hai góc phụ nhau (ngắn gọn)<a class="headerlink" href="#ti-so-luong-giac-cua-hai-goc-phu-nhau-ngan-gon" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XoekmlUg9yU?si=7YQX6DTWRSs2z9Y5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-goc-nhon-dac-biet-ngan-gon">
+<h2><span class="section-number">1.3. </span>Tỉ số lượng giác của góc nhọn đặc biệt(ngắn gọn)<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-dac-biet-ngan-gon" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5h87iTzBC34?si=xkK49nDMyDK_E2eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-1">
+<h2><span class="section-number">1.4. </span>Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 1<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-1" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ru-UeWRg81E?si=r5h9r9uy1DI5WLAm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-2">
+<h2><span class="section-number">1.5. </span>Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 2<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-2" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fC7E37JF1KU?si=50eWEfim8mC8FLQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-3">
+<h2><span class="section-number">1.6. </span>Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 3<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-3" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8gqm5w8qcZk?si=4G_XHymGvV77lScI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-4">
+<h2><span class="section-number">1.7. </span>Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 4<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-4" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lmxKLA_ZpmY?si=VJwexoTI0JAefKCp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+<section id="ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-5">
+<h2><span class="section-number">1.8. </span>Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 5<a class="headerlink" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-5" title="Link to this heading">#</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OS-OhaTMyEU?si=yNK3QEzTqe3GYNzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -765,7 +819,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Bài số 2</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Hệ thức giữa các cạnh và góc của tam giác vuông</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -776,7 +830,27 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-ngan-gon">1.1. Tỉ số lượng giác của góc nhọn (ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-hai-goc-phu-nhau-ngan-gon">1.2. Tỉ số lượng giác của hai góc phụ nhau (ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-dac-biet-ngan-gon">1.3. Tỉ số lượng giác của góc nhọn đặc biệt(ngắn gọn)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-1">1.4. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-2">1.5. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-3">1.6. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-4">1.7. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ti-so-luong-giac-cua-goc-nhon-chi-tiet-tiet-5">1.8. Tỉ số lượng giác của góc nhọn (chi tiết) - Tiết 5</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
