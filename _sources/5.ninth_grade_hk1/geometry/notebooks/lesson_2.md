@@ -5,7 +5,7 @@
 ## Giải tam giác vuông
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Woj43qCTETU?si=hVi5tQhjCTaFQ49b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## thức liên hệ giữa hai cạnh góc vuông
+## Hệ thức liên hệ giữa hai cạnh góc vuông
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aHfG9Dumfww?si=a5uT-OCHn1DJjqUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Hệ thức giữa cạnh và góc của tam giác vuông (chi tiết)- Tiết 1
