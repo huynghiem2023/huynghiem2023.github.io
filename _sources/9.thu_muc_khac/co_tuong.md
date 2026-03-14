@@ -1,4 +1,10 @@
-# ♟️ Cờ Tướng của Thầy Huy
+# Cờ Tướng của Thầy Huy
+
+```{image} tuong_do.png
+:alt: Tướng Đỏ
+:width: 60px
+:align: center
+```
 
 Ứng dụng huấn luyện khai cuộc Cờ Tướng - Học và luyện tập 30+ thế trận khai cuộc phổ biến nhất.
 
