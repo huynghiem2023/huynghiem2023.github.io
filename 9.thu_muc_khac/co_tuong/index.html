@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
+    <div id="debug-errors" style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;background:red;color:white;padding:10px;font-size:12px;max-height:200px;overflow:auto"></div>
+    <script>
+        window.onerror = function(msg, src, line, col, err) {
+            var d = document.getElementById('debug-errors');
+            d.style.display = 'block';
+            d.innerHTML += '<b>ERROR:</b> ' + msg + '<br>File: ' + src + ':' + line + '<br><br>';
+            return false;
+        };
+    </script>
     <div class="overlay" id="overlay"></div>
 
     <div class="app-layout">

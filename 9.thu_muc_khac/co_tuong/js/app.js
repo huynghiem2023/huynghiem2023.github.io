@@ -70,23 +70,41 @@ class App {
     }
 
     selectOpening(opening) {
+        console.log('[DEBUG] selectOpening START:', opening.name);
+        try {
         this.currentOpening = opening;
         // Update active menu item
         document.querySelectorAll('.menu-item').forEach(el => {
             el.classList.toggle('active', el.dataset.id === opening.id);
         });
+        console.log('[DEBUG] menu updated');
         // Update info
         document.getElementById('opening-name').textContent = opening.name;
         document.getElementById('opening-desc').textContent = opening.description;
+        console.log('[DEBUG] info updated');
         this.buildMoveList(opening);
+        console.log('[DEBUG] moveList built');
 
         if (this.currentMode === 'tutorial') {
+            console.log('[DEBUG] deactivating play...');
             this.play.deactivate();
+            console.log('[DEBUG] activating tutorial...');
             this.tutorial.activate(opening);
+            console.log('[DEBUG] deactivating quiz...');
             this.quiz.deactivate();
+            console.log('[DEBUG] tutorial mode done');
         } else {
+            console.log('[DEBUG] deactivating play for quiz...');
             this.play.deactivate();
+            console.log('[DEBUG] starting quiz...');
             this.startQuiz();
+            console.log('[DEBUG] quiz mode done');
+        }
+        console.log('[DEBUG] selectOpening END');
+        } catch(e) {
+            console.error('[DEBUG] selectOpening ERROR:', e);
+            var d = document.getElementById('debug-errors');
+            if(d) { d.style.display = 'block'; d.innerHTML += '<b>selectOpening ERROR:</b> ' + e.message + '<br>' + e.stack + '<br><br>'; }
         }
     }
 
