@@ -158,21 +158,32 @@ parts:
     #   - glob: 4.eighth_grade_hk1/ttt/notebooks/*
   - caption: Lớp 9 HK I
     chapters:
-    # - file: 5.ninth_grade_hk1/xac_suat_thong_ke
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 5.ninth_grade_hk1/xac_suat_thong_ke/notebooks/*
-    # - file: 5.ninth_grade_hk1/algebra
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 5.ninth_grade_hk1/algebra/notebooks/*
-    # - file: 5.ninth_grade_hk1/geometry
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 5.ninth_grade_hk1/geometry/notebooks/*
+    - file: 5.ninth_grade_hk1/xac_suat_thong_ke
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade_hk1/xac_suat_thong_ke/notebooks/*
+    - file: 5.ninth_grade_hk1/algebra
+      options:
+        numbered: true
+      sections:
+      # - glob: 5.ninth_grade_hk1/algebra/notebooks/*
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_1.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_2.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_3.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_4.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_5.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_6.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_7.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_8.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_9.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_10.md
+      - file: 5.ninth_grade_hk1/algebra/notebooks/lesson_11.md
+    - file: 5.ninth_grade_hk1/geometry
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade_hk1/geometry/notebooks/*
     - file: 5.ninth_grade_hk1/ttt
       options:
         numbered: true
@@ -307,57 +318,57 @@ parts:
       # - glob: 4.eighth_grade_hk2/ttt/notebooks/*
   - caption: Lớp 9 HK II
     chapters:
-    # - file: 5.ninth_grade_hk2/xac_suat_thong_ke
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 5.ninth_grade_hk2/xac_suat_thong_ke/notebooks/*
-    # - file: 5.ninth_grade_hk2/algebra
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 5.ninth_grade_hk2/algebra/notebooks/*
-    # - file: 5.ninth_grade_hk2/geometry
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 5.ninth_grade_hk2/geometry/notebooks/*
+    - file: 5.ninth_grade_hk2/xac_suat_thong_ke
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade_hk2/xac_suat_thong_ke/notebooks/*
+    - file: 5.ninth_grade_hk2/algebra
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade_hk2/algebra/notebooks/*
+    - file: 5.ninth_grade_hk2/geometry
+      options:
+        numbered: true
+      sections:
+      - glob: 5.ninth_grade_hk2/geometry/notebooks/*
     - file: 5.ninth_grade_hk2/ttt
       options:
         numbered: true
       sections:
       - glob: 5.ninth_grade_hk2/ttt/notebooks/*
-  - caption: 6.hd_giai_ts10
-    chapters:
-    # - file: 6.hd_giai_ts10/chu_de_dai_so 
-      # options:
-        # numbered: true
-      # sections:
-      # - glob: 6.hd_giai_ts10/chu_de_dai_so/notebooks/*
-      # - file: 6.hd_giai_ts10/chu_de_dai_so/notebooks/lesson_1.md
-    # - file: 6.hd_giai_ts10/chu_de_hinh_hoc
-      # options:
-        # numbered: true
-      # sections:
-      # - glob: 6.hd_giai_ts10/chu_de_hinh_hoc/notebooks/*
-      # - file: 6.hd_giai_ts10/chu_de_hinh_hoc/notebooks/lesson_1.md
-    - file: 6.hd_giai_ts10/chu_de_ttt
-      options:
-        numbered: true
-      sections:
-      # - glob: 6.hd_giai_ts10/chu_de_ttt/notebooks/*
-      - file: 6.hd_giai_ts10/chu_de_ttt/notebooks/lesson_1.md
-    - file: 6.hd_giai_ts10/toan_ko_chuyen_ptnk
-      options:
-        numbered: true
-      sections:
-      # - glob: 6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/*
-      - file: 6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/lesson_1.md
-    # - file: 6.hd_giai_ts10/ttt_thay_huy
-    #   options:
-    #     numbered: true
-    #   sections:
-    #   - glob: 6.hd_giai_ts10/ttt_thay_huy/notebooks/*
+  # - caption: 6.hd_giai_ts10
+  #   chapters:
+  #   - file: 6.hd_giai_ts10/chu_de_dai_so 
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     - glob: 6.hd_giai_ts10/chu_de_dai_so/notebooks/*
+  #     - file: 6.hd_giai_ts10/chu_de_dai_so/notebooks/lesson_1.md
+  #   - file: 6.hd_giai_ts10/chu_de_hinh_hoc
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     - glob: 6.hd_giai_ts10/chu_de_hinh_hoc/notebooks/*
+  #     - file: 6.hd_giai_ts10/chu_de_hinh_hoc/notebooks/lesson_1.md
+  #   - file: 6.hd_giai_ts10/chu_de_ttt
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     # - glob: 6.hd_giai_ts10/chu_de_ttt/notebooks/*
+  #     # - file: 6.hd_giai_ts10/chu_de_ttt/notebooks/lesson_1.md
+  #   # - file: 6.hd_giai_ts10/toan_ko_chuyen_ptnk
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     # - glob: 6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/*
+  #     # - file: 6.hd_giai_ts10/toan_ko_chuyen_ptnk/notebooks/lesson_1.md
+  #   # - file: 6.hd_giai_ts10/ttt_thay_huy
+  #   #   options:
+  #   #     numbered: true
+  #   #   sections:
+  #   #   - glob: 6.hd_giai_ts10/ttt_thay_huy/notebooks/*
   - caption: 7.hd_cac_loai_may_casio
     chapters:
     - file: 7.hd_cac_loai_may_casio/casio_fx_570_es_plus
@@ -379,3 +390,29 @@ parts:
       sections:
       # - glob: 7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/*
       - file: 7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/lesson_1.md
+  - caption: 9.thu_muc_khac
+    chapters:
+    - file: 9.thu_muc_khac/co_tuong
+  #   - file: 9.thu_muc_khac/arithmetics
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     - glob: 9.thu_muc_khac/arithmetics/notebooks/*
+  #   - file: 9.thu_muc_khac/xac_suat_thong_ke
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     - glob: 9.thu_muc_khac/xac_suat_thong_ke/notebooks/*
+  #   - file: 9.thu_muc_khac/geometry
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     - glob: 9.thu_muc_khac/geometry/notebooks/*
+  #   - file: 9.thu_muc_khac/algebra
+  #     options:
+  #       numbered: true
+  #   - file: 9.thu_muc_khac/ttt
+  #     options:
+  #       numbered: true
+  #     sections:
+  #     - glob: 9.thu_muc_khac/ttt/notebooks/*
