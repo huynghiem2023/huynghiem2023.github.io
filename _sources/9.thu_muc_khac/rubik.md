@@ -885,6 +885,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F L' D' B' L F U F' D' F L2 B' R' U L2 D' F</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F L' D' B' L F U F' D' F L2 B' R' U L2 D' F">Tạo hoa văn Chân gà</button>
         </div>
+
+        <div class="step-guide">
+          <strong>7. Hoa văn Python (Python)</strong>
+          <p>Tạo hiệu ứng hình khối hai chú rắn lồng ghép đối xứng, giống như biểu tượng (logo) ngôn ngữ lập trình Python huyền thoại.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 R' B' U R' L F' L F' B D' R B L2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F2 R' B' U R' L F' L F' B D' R B L2">Tạo hoa văn Python</button>
+        </div>
       </div>
     </div>
   </div>
