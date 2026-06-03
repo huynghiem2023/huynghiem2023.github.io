@@ -1140,9 +1140,9 @@
     const prevSpeed = animSpeedMs;
     const prevPause = animPauseMs;
     
-    // Set tutorial speed (2s animation + 1s pause = 3 seconds per move)
-    animSpeedMs = 2000;
-    animPauseMs = 1000;
+    // Set tutorial speed (1.5s animation + 0.5s pause = 2 seconds per move)
+    animSpeedMs = 1500;
+    animPauseMs = 500;
     
     // Parse moves like "R U R' U2 F2 f"
     const moves = algoString.split(/\s+/).filter(m => m.trim().length > 0);
