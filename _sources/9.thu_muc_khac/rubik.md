@@ -906,6 +906,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F R' U L F' L' F U' R U L' U' L F'</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F R' U L F' L' F U' R U L' U' L F'">Tạo hoa văn Lốc xoáy</button>
         </div>
+
+        <div class="step-guide">
+          <strong>10. Hoa văn 4 Chấm tâm (4 Spots)</strong>
+          <p>Chỉ có 4 mặt xung quanh đổi tâm đối xứng cho nhau, còn 2 mặt trên và dưới vẫn giữ nguyên trạng thái hoàn thành.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 B2 U D' R2 L2 U D'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F2 B2 U D' R2 L2 U D'">Tạo hoa văn 4 Chấm tâm</button>
+        </div>
       </div>
     </div>
   </div>
