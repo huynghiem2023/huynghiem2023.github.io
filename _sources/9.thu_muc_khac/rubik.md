@@ -541,6 +541,7 @@
         <button class="tab-btn" data-step="step5">5. Đúng tâm vàng</button>
         <button class="tab-btn" data-step="step6">6. Góc vàng</button>
         <button class="tab-btn" data-step="step7">7. Lật góc xong</button>
+        <button class="tab-btn" data-step="cfop">⭐ Nâng cao (CFOP)</button>
       </div>
       
       <!-- Tab Intro -->
@@ -732,8 +733,86 @@
             <li>Tiếp tục thực hiện công thức <code>R' D' R D</code> cho đến khi nó đúng hướng vàng. Làm tương tự cho các góc lỗi còn lại. Rubik sẽ tự động hoàn thành!</li>
           </ol>
         </div>
-        <div class="algo-player">
+        <div class="algo-player" style="margin-bottom: 15px;">
           <button class="btn btn-danger play-algo" data-algo="R' D' R D R' D' R D">Thử lật góc (R' D' R D) x 2</button>
+        </div>
+        <button class="btn btn-primary next-step-btn" data-next="cfop" style="width: 100%; padding: 12px; margin-top: 15px;">⭐ Học phương pháp giải nhanh Nâng cao (CFOP) ➔</button>
+      </div>
+      
+      <!-- Tab CFOP -->
+      <div class="tab-content hidden" id="tab-cfop">
+        <h3>Phương pháp giải nhanh nâng cao CFOP</h3>
+        <p>CFOP (còn gọi là phương pháp Fridrich) là phương pháp giải Rubik phổ biến nhất thế giới của các tuyển thủ tốc độ. Phương pháp này gồm 4 bước chính:</p>
+        <div class="notation-grid" style="grid-template-columns: repeat(4, 1fr);">
+          <div style="text-align: center;"><strong>C</strong>ross<br><small>(Chữ thập đáy)</small></div>
+          <div style="text-align: center;"><strong>F</strong>2L<br><small>(2 tầng cùng lúc)</small></div>
+          <div style="text-align: center;"><strong>O</strong>LL<br><small>(Định hướng tầng 3)</small></div>
+          <div style="text-align: center;"><strong>P</strong>LL<br><small>(Hoán vị tầng 3)</small></div>
+        </div>
+
+        <h4>1. Cross (Giải chữ thập đáy nhanh)</h4>
+        <p>Thay vì tạo hoa cúc Daisy rồi hạ xuống đáy, các tuyển thủ sẽ quan sát các cạnh trắng trong 15 giây chuẩn bị và giải trực tiếp chữ thập trắng ở mặt <strong>Dưới đáy (Bottom)</strong> trong tối đa 8 nước xoay.</p>
+
+        <h4>2. F2L (First Two Layers - Giải 2 tầng cùng lúc)</h4>
+        <p>Thay vì giải góc trắng tầng 1 rồi mới giải cạnh tầng 2, F2L gộp 2 viên này lại thành một cặp (Pair) rồi chèn vào khe (Slot) thích hợp. Việc này giúp hoàn thành cả 2 tầng chỉ trong 4 cặp nước đi.</p>
+        <div class="step-guide">
+          <strong>Ví dụ các cặp F2L cơ bản:</strong>
+          <ul>
+            <li><strong>Chèn cặp đôi có sẵn (Basic Insert):</strong> 
+              <span class="formula">U R U' R'</span> (Khe bên phải) hoặc <span class="formula">U' L' U L</span> (Khe bên trái)
+              <br>
+              <button class="btn btn-success btn-sm play-algo" data-algo="U R U' R'" style="margin-top: 4px; padding: 4px 8px; font-size: 0.8rem;">Chạy thử U R U' R'</button>
+            </li>
+            <li><strong>Tách và chèn góc-cạnh (Split & Insert):</strong>
+              Công thức: <span class="formula">R U R' U' R U R'</span>
+              <br>
+              <button class="btn btn-success btn-sm play-algo" data-algo="R U R' U' R U R'" style="margin-top: 4px; padding: 4px 8px; font-size: 0.8rem;">Chạy thử tách chèn</button>
+            </li>
+          </ul>
+        </div>
+
+        <h4>3. OLL (Orientation of Last Layer - Định hướng tầng 3)</h4>
+        <p>Lật toàn bộ mặt màu vàng của tầng 3 lên trên trong đúng 1 công thức. CFOP đầy đủ có 57 công thức OLL, nhưng người mới bắt đầu có thể học hệ <strong>2-Look OLL</strong> (chỉ gồm 7 công thức lật góc sau khi đã có chữ thập vàng):</p>
+        <div class="formula-grid">
+          <div class="formula-col">
+            <strong>Cá vàng thuận (Sune):</strong>
+            <div class="formula-box" style="font-size: 0.95rem;">R U R' U R U2 R'</div>
+            <button class="btn btn-success btn-sm play-algo" data-algo="R U R' U R U2 R'">Chạy Sune</button>
+          </div>
+          <div class="formula-col">
+            <strong>Cá vàng ngược (Anti-Sune):</strong>
+            <div class="formula-box" style="font-size: 0.95rem;">R U2 R' U' R U' R'</div>
+            <button class="btn btn-success btn-sm play-algo" data-algo="R U2 R' U' R U' R'">Chạy Anti-Sune</button>
+          </div>
+        </div>
+
+        <h4>4. PLL (Permutation of Last Layer - Hoán vị tầng 3)</h4>
+        <p>Hoán đổi vị trí các góc và cạnh của tầng 3 để hoàn thành khối Rubik trong đúng 1 công thức. Dưới đây là các công thức PLL huyền thoại phổ biến nhất:</p>
+        
+        <div class="step-guide">
+          <strong>Các thuật toán PLL quan trọng nhất:</strong>
+          <ul>
+            <li style="margin-bottom: 12px;">
+              <strong>Hoán vị chữ T (T-Perm - Đổi 2 góc bên & 2 cạnh bên):</strong>
+              <div class="formula-box" style="font-size: 1rem; margin: 6px 0;">R U R' U' R' F R2 U' R' U' R U R' F'</div>
+              <button class="btn btn-success btn-sm play-algo" data-algo="R U R' U' R' F R2 U' R' U' R U R' F'">Chạy minh họa T-Perm</button>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Hoán vị chữ Y (Y-Perm - Đổi 2 góc chéo & 2 cạnh chéo):</strong>
+              <div class="formula-box" style="font-size: 1rem; margin: 6px 0;">F R U' R' U' R U R' F' R U R' U' R' F R F'</div>
+              <button class="btn btn-success btn-sm play-algo" data-algo="F R U' R' U' R U R' F' R U R' U' R' F R F'">Chạy minh họa Y-Perm</button>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Hoán vị chữ U bản A (U-Perm A - Đổi 3 cạnh ngược chiều):</strong>
+              <div class="formula-box" style="font-size: 1rem; margin: 6px 0;">R2 U R U R' U' R' U' R' U R'</div>
+              <button class="btn btn-success btn-sm play-algo" data-algo="R2 U R U R' U' R' U' R' U R'">Chạy minh họa U-Perm A</button>
+            </li>
+            <li style="margin-bottom: 12px;">
+              <strong>Hoán vị chữ U bản B (U-Perm B - Đổi 3 cạnh thuận chiều):</strong>
+              <div class="formula-box" style="font-size: 1rem; margin: 6px 0;">R U' R U R U R U' R' U' R2</div>
+              <button class="btn btn-success btn-sm play-algo" data-algo="R U' R U R U R U' R' U' R2">Chạy minh họa U-Perm B</button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
