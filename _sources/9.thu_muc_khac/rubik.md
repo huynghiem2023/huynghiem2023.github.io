@@ -920,6 +920,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L' B' D U R U' R' D2 R2 D L D' L' R' F U</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="L' B' D U R U' R' D2 R2 D L D' L' R' F U">Tạo hình xoắn ốc</button>
         </div>
+
+        <div class="step-guide">
+          <strong>12. Sọc dọc (Vertical Stripes)</strong>
+          <p>Các mặt chia thành các dải màu sọc đứng xen kẽ đẹp mắt.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F U F R L2 B D' R D2 L D' B R2 L F U F</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F U F R L2 B D' R D2 L D' B R2 L F U F">Tạo sọc dọc</button>
+        </div>
       </div>
     </div>
   </div>
