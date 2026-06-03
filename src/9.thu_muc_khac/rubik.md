@@ -948,6 +948,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R2 L' D F2 R' D' R' L U' D R D B2 R' U D2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="R2 L' D F2 R' D' R' L U' D R D B2 R' U D2">Tạo hoa văn Dây thép gai</button>
         </div>
+
+        <div class="step-guide">
+          <strong>16. Dấu Cộng - Trừ (Plus Minus)</strong>
+          <p>Tạo ra hình dấu cộng trên một số mặt và dấu trừ ở các mặt đối diện.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U2 R2 L2 U2 R2 L2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U2 R2 L2 U2 R2 L2">Tạo hoa văn Dấu Cộng - Trừ</button>
+        </div>
       </div>
     </div>
   </div>
