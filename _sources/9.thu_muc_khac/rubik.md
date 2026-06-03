@@ -524,6 +524,15 @@
             <button class="btn move-btn" data-move="B'">B'</button>
           </div>
         </div>
+        <div class="control-row manual-moves">
+          <span class="move-label">Xoay lớp giữa (Slice):</span>
+          <div class="move-buttons" style="grid-template-columns: repeat(4, 1fr);">
+            <button class="btn move-btn" data-move="M">M</button>
+            <button class="btn move-btn" data-move="E">E</button>
+            <button class="btn move-btn" data-move="M'">M'</button>
+            <button class="btn move-btn" data-move="E'">E'</button>
+          </div>
+        </div>
         <div class="rotation-tip">
           <small>💡 Mẹo: Nhấn kéo chuột hoặc vuốt trên khối Rubik để xoay góc nhìn 3D!</small>
         </div>
@@ -566,6 +575,15 @@
           <div><strong>B (Back):</strong> Mặt Sau</div>
         </div>
         <p>Nếu có dấu nháy đơn đi kèm như <strong>R' (R nháy)</strong>, xoay <strong>ngược chiều kim đồng hồ</strong>.</p>
+        
+        <h4>Ký hiệu xoay lớp giữa (Slice Moves)</h4>
+        <p>Để tạo các hoa văn nhanh hơn, ta có thể xoay các lớp nằm ở giữa các mặt chính (nhìn từ các hướng tiêu chuẩn tương ứng):</p>
+        <div class="notation-grid">
+          <div><strong>M (Middle):</strong> Lớp giữa nằm giữa Trái và Phải (xoay xuống dưới, cùng chiều với L)</div>
+          <div><strong>E (Equator):</strong> Lớp giữa nằm giữa Trên và Dưới (xoay sang phải, cùng chiều với D)</div>
+          <div><strong>M':</strong> Xoay lớp giữa lên trên (ngược chiều với L)</div>
+          <div><strong>E':</strong> Xoay lớp giữa sang trái (ngược chiều với D)</div>
+        </div>
         
         <h4>Giải mẫu thử nghiệm</h4>
         <p>Hãy bấm nút bên dưới để xem máy tính xáo trộn mẫu và tự động giải Rubik từ đầu đến cuối một cách trực quan:</p>
@@ -831,10 +849,13 @@
         </div>
 
         <div class="step-guide">
-          <strong>2. Hoa văn mắt hoa cúc / Nhụy hoa (Donut / Dot)</strong>
+          <strong>2. Hoa văn mắt hoa cúc / Nhụy hoa (Donut / Dot / Flower)</strong>
           <p>Tạo một chấm tròn màu khác biệt ở chính giữa 6 mặt, trông như những bông hoa hoặc chiếc bánh donut ngọt ngào.</p>
-          <div class="formula-box">Công thức: <span class="formula">U D' R L' F B' U' D</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="U D' R L' F B' U' D">Tạo hoa văn Nhụy hoa</button>
+          <div class="formula-box" style="font-size: 1rem; line-height: 1.6;">
+            Công thức cơ bản: <span class="formula">U D' R L' F B' U' D</span><br>
+            Công thức xoay nhanh (Slice): <span class="formula">M E M' E'</span>
+          </div>
+          <button class="btn btn-success play-algo-pattern" data-algo="M E M' E'">Tạo hoa văn Nhụy hoa</button>
         </div>
 
         <div class="step-guide">
@@ -993,6 +1014,16 @@
         rotationAxis = 'Z';
         cssAngle = isPrime ? 90 : -90;
         break;
+      case 'M':
+        filterFunc = c => c.x === 0;
+        rotationAxis = 'X';
+        cssAngle = isPrime ? 90 : -90;
+        break;
+      case 'E':
+        filterFunc = c => c.y === 0;
+        rotationAxis = 'Y';
+        cssAngle = isPrime ? -90 : 90;
+        break;
       default:
         isAnimating = false;
         if (callback) callback();
@@ -1036,7 +1067,7 @@
               c.y = z; c.z = -y;
               temp = c.faces.u; c.faces.u = c.faces.b; c.faces.b = c.faces.d; c.faces.d = c.faces.f; c.faces.f = temp;
             }
-          } else { // L
+          } else { // L or M
             if (logicalDir === 'CW') {
               c.y = z; c.z = -y;
               temp = c.faces.u; c.faces.u = c.faces.b; c.faces.b = c.faces.d; c.faces.d = c.faces.f; c.faces.f = temp;
@@ -1054,7 +1085,7 @@
               c.x = z; c.z = -x;
               temp = c.faces.l; c.faces.l = c.faces.b; c.faces.b = c.faces.r; c.faces.r = c.faces.f; c.faces.f = temp;
             }
-          } else { // D
+          } else { // D or E
             if (logicalDir === 'CW') {
               c.x = z; c.z = -x;
               temp = c.faces.l; c.faces.l = c.faces.b; c.faces.b = c.faces.r; c.faces.r = c.faces.f; c.faces.f = temp;
