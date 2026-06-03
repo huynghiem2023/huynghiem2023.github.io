@@ -845,14 +845,25 @@ document.write(`
   position: absolute;
   width: 48px;
   height: 48px;
-  border: 3px solid #111;
+  background-color: #121214; /* Realistic black plastic speedcube body */
+  border: 1.5px solid #08080a;
   border-radius: 6px;
   box-sizing: border-box;
-  background-color: #1e1e24; /* internal/black body */
   display: flex;
   justify-content: center;
   align-items: center;
   backface-visibility: visible;
+}
+
+/* Premium beveled stickers */
+.face::after {
+  content: '';
+  width: 39px;
+  height: 39px;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.35), inset 0 -2px 3px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+  box-sizing: border-box;
 }
 
 /* 3D position transforms for each sticker face */
@@ -863,14 +874,36 @@ document.write(`
 .face.f { transform: rotateY(0deg) translateZ(25px); }
 .face.b { transform: rotateY(180deg) translateZ(25px); }
 
-/* Sticker colors */
-.color-yellow { background-color: #ffd60a !important; }
-.color-white { background-color: #ffffff !important; }
-.color-orange { background-color: #ff9f0a !important; }
-.color-red { background-color: #ff453a !important; }
-.color-green { background-color: #30d158 !important; }
-.color-blue { background-color: #0a84ff !important; }
-.color-black { background-color: #1c1c1e !important; }
+/* Premium vibrant radial-gradient sticker colors */
+.color-yellow::after {
+  background: radial-gradient(circle at 35% 35%, #fffb9b 0%, #ffcc00 70%);
+  border: 1px solid #d4a300;
+}
+.color-white::after {
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e6e6e6 70%);
+  border: 1px solid #cccccc;
+}
+.color-orange::after {
+  background: radial-gradient(circle at 35% 35%, #ffac66 0%, #ff6b00 70%);
+  border: 1px solid #cc5200;
+}
+.color-red::after {
+  background: radial-gradient(circle at 35% 35%, #ff6680 0%, #cc0022 70%);
+  border: 1px solid #990011;
+}
+.color-green::after {
+  background: radial-gradient(circle at 35% 35%, #73ff8d 0%, #00b33c 70%);
+  border: 1px solid #00802b;
+}
+.color-blue::after {
+  background: radial-gradient(circle at 35% 35%, #66a3ff 0%, #0055ff 70%);
+  border: 1px solid #0040cc;
+}
+.color-black::after {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
 
 /* Control Buttons & HUD */
 .cube-controls {
