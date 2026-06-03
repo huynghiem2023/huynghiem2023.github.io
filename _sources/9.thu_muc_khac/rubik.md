@@ -927,6 +927,20 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F U F R L2 B D' R D2 L D' B R2 L F U F</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F U F R L2 B D' R D2 L D' B R2 L F U F">Tạo sọc dọc</button>
         </div>
+
+        <div class="step-guide">
+          <strong>13. Siêu lật (Superflip)</strong>
+          <p>Hoa văn phức tạp nhất: tất cả các góc đúng vị trí, nhưng 12 viên cạnh bị lật ngược hoàn toàn.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U R2 F B R B2 R U2 L B2 R U' D' R2 F R' L B2 U2 F2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U R2 F B R B2 R U2 L B2 R U' D' R2 F R' L B2 U2 F2">Tạo hoa văn Siêu lật</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>14. Bậc thang (Staircase)</strong>
+          <p>Hiệu ứng thị giác dạng các bậc thang chéo chạy qua các mặt.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L2 F2 D' L2 B2 D' U' R2 B2 U' L2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="L2 F2 D' L2 B2 D' U' R2 B2 U' L2">Tạo hoa văn Bậc thang</button>
+        </div>
       </div>
     </div>
   </div>
