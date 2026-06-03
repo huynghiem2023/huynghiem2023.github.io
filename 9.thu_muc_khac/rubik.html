@@ -1288,6 +1288,7 @@ document.write(`
         <button class="tab-btn" data-step="step6">6. Góc vàng</button>
         <button class="tab-btn" data-step="step7">7. Lật góc xong</button>
         <button class="tab-btn" data-step="cfop">⭐ Nâng cao (CFOP)</button>
+        <button class="tab-btn" data-step="patterns">🎨 Hoa văn đẹp</button>
       </div>
       
       <!-- Tab Intro -->
@@ -1559,6 +1560,41 @@ document.write(`
               <button class="btn btn-success btn-sm play-algo" data-algo="R U' R U R U R U' R' U' R2">Chạy minh họa U-Perm B</button>
             </li>
           </ul>
+        </div>
+        <button class="btn btn-primary next-step-btn" data-next="patterns" style="width: 100%; padding: 12px; margin-top: 15px;">🎨 Khám phá các hoa văn Rubik tuyệt đẹp ➔</button>
+      </div>
+
+      <!-- Tab Patterns -->
+      <div class="tab-content hidden" id="tab-patterns">
+        <h3>Tạo các hoa văn Rubik 3x3x3 tuyệt đẹp</h3>
+        <p>Từ một khối Rubik đã giải hoàn chỉnh, các em có thể xoay theo các công thức đặc biệt dưới đây để tạo ra những mẫu hoa văn cực kỳ bắt mắt. Hãy bấm nút để khối Rubik 3D tự động xoay biểu diễn nhé!</p>
+        
+        <div class="step-guide">
+          <strong>1. Hoa văn bàn cờ (Checkerboard)</strong>
+          <p>Mẫu hoa văn đan xen màu sắc cổ điển và cực kỳ nổi tiếng. Tất cả 6 mặt sẽ biến thành hình bàn cờ vua.</p>
+          <div class="formula-box">Công thức: <span class="formula">R2 L2 U2 D2 F2 B2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R2 L2 U2 D2 F2 B2">Tạo hoa văn Bàn cờ</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>2. Hoa văn mắt hoa cúc / Nhụy hoa (Donut / Dot)</strong>
+          <p>Tạo một chấm tròn màu khác biệt ở chính giữa 6 mặt, trông như những bông hoa hoặc chiếc bánh donut ngọt ngào.</p>
+          <div class="formula-box">Công thức: <span class="formula">U D' R L' F B' U' D</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U D' R L' F B' U' D">Tạo hoa văn Nhụy hoa</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>3. Khối trong khối (Cube in a Cube)</strong>
+          <p>Tạo ra một khối Rubik 2x2x2 thu nhỏ nằm lồng góc bên trong khối Rubik 3x3x3 lớn, tạo chiều sâu 3D cực đỉnh.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F L F U' R U F2 L2 U' L' B D' B' L2 U</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F L F U' R U F2 L2 U' L' B D' B' L2 U">Tạo hoa văn Khối trong khối</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>4. Hoa văn Con Rắn (Snake)</strong>
+          <p>Tạo ra các đường sọc màu sắc uốn lượn xung quanh khối Rubik giống như một chú rắn đang bò quanh chiếc hộp.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L U B' U' R L' B R' F B' D R D' F'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="L U B' U' R L' B R' F B' D R D' F'">Tạo hoa văn Con rắn</button>
         </div>
       </div>
     </div>
@@ -1919,6 +1955,25 @@ document.write(`
       const algo = e.target.getAttribute('data-algo');
       if (algo) {
         playAlgorithm(algo);
+      }
+    }
+    // Play algorithm for patterns (resets cube state first)
+    if (e.target && e.target.classList.contains('play-algo-pattern')) {
+      const algo = e.target.getAttribute('data-algo');
+      if (algo && !isAnimating) {
+        initCube();
+        hudStatus.innerText = "Khôi phục khối Rubik sạch trước khi tạo hoa văn...";
+        setTimeout(() => {
+          // Play at moderately fast speed (500ms per move) for patterns
+          const prevSpeed = animSpeedMs;
+          const prevPause = animPauseMs;
+          animSpeedMs = 500;
+          animPauseMs = 150;
+          playAlgorithm(algo, () => {
+            animSpeedMs = prevSpeed;
+            animPauseMs = prevPause;
+          });
+        }, 500);
       }
     }
   });
