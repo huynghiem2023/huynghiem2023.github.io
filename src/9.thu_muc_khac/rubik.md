@@ -962,6 +962,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 D2 F' L2 D2 U2 R2 B' U2 F2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F2 D2 F' L2 D2 U2 R2 B' U2 F2">Tạo hoa văn 6 Chữ T</button>
         </div>
+
+        <div class="step-guide">
+          <strong>18. 6 Chữ U (Six U's)</strong>
+          <p>Mỗi mặt của khối Rubik sẽ hiển thị một chữ "U" được bao quanh bởi màu nền.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 U2 F2 B2 U2 F B</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F2 U2 F2 B2 U2 F B">Tạo hoa văn 6 Chữ U</button>
+        </div>
       </div>
     </div>
   </div>
