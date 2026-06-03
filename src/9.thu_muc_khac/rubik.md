@@ -969,6 +969,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 U2 F2 B2 U2 F B</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F2 U2 F2 B2 U2 F B">Tạo hoa văn 6 Chữ U</button>
         </div>
+
+        <div class="step-guide">
+          <strong>19. Đường Zic-zac (Zigzag)</strong>
+          <p>Các dải màu chạy chéo liên tục tạo thành các đường zic-zac nối tiếp nhau.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R L F B R L F B R L F B</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R L F B R L F B R L F B">Tạo hoa văn Đường Zic-zac</button>
+        </div>
       </div>
     </div>
   </div>
