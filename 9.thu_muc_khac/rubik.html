@@ -1623,8 +1623,8 @@ document.write(`
       if (el) wrapper.appendChild(el);
     });
     
-    // Animate wrapper
-    wrapper.style.transition = 'transform 0.35s cubic-bezier(0.25, 1, 0.5, 1)';
+    // Animate wrapper (slowed down to 0.8s for clear tutorial step tracing)
+    wrapper.style.transition = 'transform 0.8s cubic-bezier(0.25, 1, 0.5, 1)';
     // Force reflow
     wrapper.offsetHeight;
     
@@ -1720,7 +1720,7 @@ document.write(`
         const next = moveQueue.shift();
         makeMove(next.moveCode, next.callback);
       }
-    }, 360);
+    }, 1000); // 1 second total per move
   }
   
   // Play algorithms sequentially
