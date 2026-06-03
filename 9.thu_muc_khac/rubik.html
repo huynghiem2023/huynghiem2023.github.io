@@ -1310,10 +1310,14 @@ document.write(`
           <div><strong>B (Back):</strong> Mặt Sau</div>
         </div>
         <p>Nếu có dấu nháy đơn đi kèm như <strong>R' (R nháy)</strong>, xoay <strong>ngược chiều kim đồng hồ</strong>.</p>
-        <p>Hãy bấm thử công thức "Sexy Move" kinh điển dưới đây để xem khối Rubik xoay mẫu:</p>
-        <div class="algo-player">
-          <button class="btn btn-success play-algo" data-algo="R U R' U'">Xem "Sexy Move" (R U R' U')</button>
+        
+        <h4>Giải mẫu thử nghiệm</h4>
+        <p>Hãy bấm nút bên dưới để xem máy tính xáo trộn mẫu và tự động giải Rubik từ đầu đến cuối một cách trực quan:</p>
+        <div class="algo-player" style="margin-bottom: 15px;">
+          <button class="btn btn-success" id="btn-demo-solve">Xem toàn bộ giải mẫu ảo (Demo Solve)</button>
+          <button class="btn btn-secondary play-algo" data-algo="R U R' U'">Chạy thử "Sexy Move" (R U R' U')</button>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step1" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 1 (Nhị vàng cánh trắng) ➔</button>
       </div>
       
       <!-- Tab 1 -->
@@ -1329,11 +1333,12 @@ document.write(`
             <li>Làm tương tự cho cả 4 cạnh để có một chữ thập trắng hoàn hảo dưới đáy.</li>
           </ol>
         </div>
-        <div class="algo-player">
+        <div class="algo-player" style="margin-bottom: 15px;">
           <p><strong>Minh họa xoay 1 cạnh trắng lên hoa cúc và hạ xuống đáy:</strong></p>
           <button class="btn btn-success play-algo" data-algo="R U R'">Đưa lên hoa cúc (R U R')</button>
           <button class="btn btn-success play-algo" data-algo="F2">Hạ xuống đáy trắng (F2)</button>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step2" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 2 (Xong tầng 1) ➔</button>
       </div>
       
       <!-- Tab 2 -->
@@ -1353,9 +1358,10 @@ document.write(`
           </div>
           <p><em>* Mẹo: Nếu viên góc nằm sẵn ở dưới đáy nhưng bị ngược màu hoặc sai góc, làm công thức trên 1 lần để đưa nó lên tầng 3 rồi giải bình thường.</em></p>
         </div>
-        <div class="algo-player">
+        <div class="algo-player" style="margin-bottom: 15px;">
           <button class="btn btn-success play-algo" data-algo="R U R' U'">Chạy Sexy Move (R U R' U')</button>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step3" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 3 (Xong tầng 2) ➔</button>
       </div>
       
       <!-- Tab 3 -->
@@ -1383,6 +1389,7 @@ document.write(`
             </div>
           </div>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step4" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 4 (Chữ thập vàng) ➔</button>
       </div>
       
       <!-- Tab 4 -->
@@ -1401,10 +1408,11 @@ document.write(`
           </div>
           <p><em>* Mẹo của Thầy Huy: Nếu đang có chữ L ngược, bạn xoay cả 2 lớp mặt trước (kí hiệu là <strong>f</strong>) sẽ ra chữ thập vàng ngay lập tức: <span class="formula">f R U R' U' f'</span></em></p>
         </div>
-        <div class="algo-player">
+        <div class="algo-player" style="margin-bottom: 15px;">
           <button class="btn btn-success play-algo" data-algo="F R U R' U' F'">Xem công thức F (R U R' U') F'</button>
           <button class="btn btn-success play-algo" data-algo="f R U R' U' f'" style="margin-left: 5px;">Xem công thức nhanh f (R U R' U') f'</button>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step5" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 5 (Đúng tâm vàng) ➔</button>
       </div>
       
       <!-- Tab 5 -->
@@ -1423,9 +1431,10 @@ document.write(`
             <li>Sau khi xoay xong, xoay mặt U thêm 1 lần nữa để tất cả các cạnh khớp tâm. Nếu ban đầu 2 cạnh đúng đối diện nhau, làm công thức trên 1 lần để chuyển về kề nhau.</li>
           </ol>
         </div>
-        <div class="algo-player">
+        <div class="algo-player" style="margin-bottom: 15px;">
           <button class="btn btn-success play-algo" data-algo="R U R' U R U2 R' U">Xem công thức Sune (R U R' U R U2 R' U)</button>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step6" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 6 (Góc vàng) ➔</button>
       </div>
       
       <!-- Tab 6 -->
@@ -1444,9 +1453,10 @@ document.write(`
             <li>Nếu không có góc nào đúng vị trí từ đầu, làm công thức trên ở hướng bất kỳ 1 lần để tạo ra 1 góc đúng, sau đó đặt góc đúng đó ở U-F-R rồi làm lại.</li>
           </ol>
         </div>
-        <div class="algo-player">
+        <div class="algo-player" style="margin-bottom: 15px;">
           <button class="btn btn-success play-algo" data-algo="U R U' L' U R' U' L">Xem công thức định vị góc</button>
         </div>
+        <button class="btn btn-primary next-step-btn" data-next="step7" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Bước 7 (Lật góc hoàn thành) ➔</button>
       </div>
       
       <!-- Tab 7 -->
@@ -1496,6 +1506,8 @@ document.write(`
   let cubies = [];
   let isAnimating = false;
   let moveQueue = [];
+  let animSpeedMs = 400; // default for manual moves (400ms rotate, 100ms pause)
+  let animPauseMs = 100;
   
   // Drag to rotate view variables
   let cubeRx = -25;
@@ -1623,8 +1635,8 @@ document.write(`
       if (el) wrapper.appendChild(el);
     });
     
-    // Animate wrapper (slowed down to 2s for very clear tutorial step tracing)
-    wrapper.style.transition = 'transform 2s cubic-bezier(0.25, 1, 0.5, 1)';
+    // Animate wrapper with dynamic speed
+    wrapper.style.transition = `transform ${animSpeedMs / 1000}s cubic-bezier(0.25, 1, 0.5, 1)`;
     // Force reflow
     wrapper.offsetHeight;
     
@@ -1720,11 +1732,19 @@ document.write(`
         const next = moveQueue.shift();
         makeMove(next.moveCode, next.callback);
       }
-    }, 3000); // 3 seconds total per move (2s animation + 1s pause)
+    }, animSpeedMs + animPauseMs);
   }
   
   // Play algorithms sequentially
   function playAlgorithm(algoString, onComplete) {
+    // Save current speeds
+    const prevSpeed = animSpeedMs;
+    const prevPause = animPauseMs;
+    
+    // Set tutorial speed (2s animation + 1s pause = 3 seconds per move)
+    animSpeedMs = 2000;
+    animPauseMs = 1000;
+    
     // Parse moves like "R U R' U2 F2 f"
     const moves = algoString.split(/\s+/).filter(m => m.trim().length > 0);
     const parsedMoves = [];
@@ -1741,6 +1761,8 @@ document.write(`
     });
     
     if (parsedMoves.length === 0) {
+      animSpeedMs = prevSpeed;
+      animPauseMs = prevPause;
       if (onComplete) onComplete();
       return;
     }
@@ -1754,6 +1776,9 @@ document.write(`
         makeMove(mv, doNext);
       } else {
         hudStatus.innerText = `Xong công thức: ${algoString}`;
+        // Restore previous speeds
+        animSpeedMs = prevSpeed;
+        animPauseMs = prevPause;
         if (onComplete) onComplete();
       }
     }
@@ -1764,6 +1789,11 @@ document.write(`
   function scrambleCube() {
     if (isAnimating) return;
     hudStatus.innerText = "Đang xáo trộn ngẫu nhiên...";
+    
+    // Scramble fast (200ms animation + 50ms pause)
+    animSpeedMs = 200;
+    animPauseMs = 50;
+    
     const moveOptions = ['U', 'D', 'L', 'R', 'F', 'B', "U'", "D'", "L'", "R'", "F'", "B'"];
     let count = 20;
     
@@ -1774,6 +1804,9 @@ document.write(`
         makeMove(randomMove, scrambleStep);
       } else {
         hudStatus.innerText = "Đã xáo trộn xong! Nhấn kéo để xoay góc nhìn hoặc thực hiện các bước giải.";
+        // Restore manual speed
+        animSpeedMs = 400;
+        animPauseMs = 100;
       }
     }
     scrambleStep();
@@ -1890,6 +1923,44 @@ document.write(`
       }
     });
   });
+  
+  // Next Step navigation buttons listener
+  document.addEventListener('click', e => {
+    if (e.target && e.target.classList.contains('next-step-btn')) {
+      const nextStep = e.target.getAttribute('data-next');
+      const targetTab = document.querySelector(`.tab-btn[data-step="${nextStep}"]`);
+      if (targetTab) {
+        targetTab.click();
+        const rightPanel = document.querySelector('.cube-right-panel');
+        if (rightPanel) rightPanel.scrollTop = 0;
+      }
+    }
+  });
+
+  // Demo Solve button listener
+  const btnDemoSolve = document.getElementById('btn-demo-solve');
+  if (btnDemoSolve) {
+    btnDemoSolve.addEventListener('click', () => {
+      if (isAnimating) return;
+      
+      initCube();
+      hudStatus.innerText = "Đang tạo thế xáo trộn mẫu (chạy nhanh)...";
+      
+      // Scramble fast
+      animSpeedMs = 250;
+      animPauseMs = 50;
+      playAlgorithm("R U R' U' F' U F", () => {
+        hudStatus.innerText = "Thế xáo trộn đã sẵn sàng! Bắt đầu giải mẫu tự động sau 1.5 giây...";
+        
+        setTimeout(() => {
+          // Play solve slowly (2s animation + 1s pause = 3 seconds total per move)
+          playAlgorithm("F' U' F U R U R'", () => {
+            hudStatus.innerText = "Giải mẫu hoàn tất! Khối Rubik đã được giải quyết thành công.";
+          });
+        }, 1500);
+      });
+    });
+  }
 })();
 </script></section>
 
