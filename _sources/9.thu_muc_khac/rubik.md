@@ -826,12 +826,12 @@
       case 'R':
         filterFunc = c => c.x === 1;
         rotationAxis = 'X';
-        angleDegrees = isPrime ? 90 : -90;
+        angleDegrees = isPrime ? -90 : 90;
         break;
       case 'L':
         filterFunc = c => c.x === -1;
         rotationAxis = 'X';
-        angleDegrees = isPrime ? -90 : 90;
+        angleDegrees = isPrime ? 90 : -90;
         break;
       case 'U':
         filterFunc = c => c.y === -1;
@@ -846,17 +846,17 @@
       case 'F':
         filterFunc = c => c.z === 1;
         rotationAxis = 'Z';
-        angleDegrees = isPrime ? 90 : -90;
+        angleDegrees = isPrime ? -90 : 90;
         break;
       case 'f': // double layer F
         filterFunc = c => c.z >= 0;
         rotationAxis = 'Z';
-        angleDegrees = isPrime ? 90 : -90;
+        angleDegrees = isPrime ? -90 : 90;
         break;
       case 'B':
         filterFunc = c => c.z === -1;
         rotationAxis = 'Z';
-        angleDegrees = isPrime ? -90 : 90;
+        angleDegrees = isPrime ? 90 : -90;
         break;
       default:
         isAnimating = false;
