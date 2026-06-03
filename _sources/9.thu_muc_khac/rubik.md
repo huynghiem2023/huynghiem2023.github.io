@@ -913,6 +913,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 B2 U D' R2 L2 U D'</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F2 B2 U D' R2 L2 U D'">Tạo hoa văn 4 Chấm tâm</button>
         </div>
+
+        <div class="step-guide">
+          <strong>11. Hình xoắn ốc (Spiral)</strong>
+          <p>Khối màu uốn lượn tạo thành hình xoắn ốc sâu quanh tâm.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L' B' D U R U' R' D2 R2 D L D' L' R' F U</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="L' B' D U R U' R' D2 R2 D L D' L' R' F U">Tạo hình xoắn ốc</button>
+        </div>
       </div>
     </div>
   </div>
