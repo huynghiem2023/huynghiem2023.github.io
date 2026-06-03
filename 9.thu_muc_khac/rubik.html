@@ -1591,7 +1591,14 @@ document.write(`
         </div>
 
         <div class="step-guide">
-          <strong>4. Hoa văn Con Rắn (Snake)</strong>
+          <strong>4. Khối trong khối trong khối (Cube in a Cube in a Cube)</strong>
+          <p>Tạo ra hai lớp khối Rubik thu nhỏ lồng nhau ở góc (một khối 2x2x2 và một khối 1x1x1 bên trong).</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U' L' U' F' R2 B' R F U B2 U B' L U' F U R F'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U' L' U' F' R2 B' R F U B2 U B' L U' F U R F'">Tạo hoa văn Khối trong khối trong khối</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>5. Hoa văn Con Rắn (Snake)</strong>
           <p>Tạo ra các đường sọc màu sắc uốn lượn xung quanh khối Rubik giống như một chú rắn đang bò quanh chiếc hộp.</p>
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L U B' U' R L' B R' F B' D R D' F'</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="L U B' U' R L' B R' F B' D R D' F'">Tạo hoa văn Con rắn</button>
@@ -1692,44 +1699,45 @@ document.write(`
     
     let filterFunc;
     let rotationAxis;
-    let angleDegrees;
+    let cssAngle;
+    let logicalDir = isPrime ? 'CCW' : 'CW';
     
-    // Choose which cubies to rotate and rotation configurations
+    // Explicit mapping of physical CSS angle and logical direction for each move
     switch (baseMove) {
       case 'R':
         filterFunc = c => c.x === 1;
         rotationAxis = 'X';
-        angleDegrees = isPrime ? -90 : 90;
+        cssAngle = isPrime ? -90 : 90;
         break;
       case 'L':
         filterFunc = c => c.x === -1;
         rotationAxis = 'X';
-        angleDegrees = isPrime ? 90 : -90;
+        cssAngle = isPrime ? 90 : -90;
         break;
       case 'U':
         filterFunc = c => c.y === -1;
         rotationAxis = 'Y';
-        angleDegrees = isPrime ? 90 : -90;
+        cssAngle = isPrime ? 90 : -90;
         break;
       case 'D':
         filterFunc = c => c.y === 1;
         rotationAxis = 'Y';
-        angleDegrees = isPrime ? -90 : 90;
+        cssAngle = isPrime ? -90 : 90;
         break;
       case 'F':
         filterFunc = c => c.z === 1;
         rotationAxis = 'Z';
-        angleDegrees = isPrime ? -90 : 90;
+        cssAngle = isPrime ? -90 : 90;
         break;
       case 'f': // double layer F
         filterFunc = c => c.z >= 0;
         rotationAxis = 'Z';
-        angleDegrees = isPrime ? -90 : 90;
+        cssAngle = isPrime ? -90 : 90;
         break;
       case 'B':
         filterFunc = c => c.z === -1;
         rotationAxis = 'Z';
-        angleDegrees = isPrime ? 90 : -90;
+        cssAngle = isPrime ? 90 : -90;
         break;
       default:
         isAnimating = false;
@@ -1755,7 +1763,7 @@ document.write(`
     // Force reflow
     wrapper.offsetHeight;
     
-    wrapper.style.transform = `rotate${rotationAxis}(${angleDegrees}deg)`;
+    wrapper.style.transform = `rotate${rotationAxis}(${cssAngle}deg)`;
     
     setTimeout(() => {
       // 1. Math State updates
@@ -1766,67 +1774,58 @@ document.write(`
         let temp;
         
         if (rotationAxis === 'X') {
-          // Rotate coordinates around X axis
-          if (angleDegrees === -90) { // R, L'
-            c.y = -z;
-            c.z = y;
-            // Face colors cycle: u <- f <- d <- b <- u
-            temp = c.faces.u;
-            c.faces.u = c.faces.f;
-            c.faces.f = c.faces.d;
-            c.faces.d = c.faces.b;
-            c.faces.b = temp;
-          } else { // R', L
-            c.y = z;
-            c.z = -y;
-            // Face colors cycle: u <- b <- d <- f <- u
-            temp = c.faces.u;
-            c.faces.u = c.faces.b;
-            c.faces.b = c.faces.d;
-            c.faces.d = c.faces.f;
-            c.faces.f = temp;
+          if (baseMove === 'R') {
+            if (logicalDir === 'CW') {
+              c.y = -z; c.z = y;
+              temp = c.faces.u; c.faces.u = c.faces.f; c.faces.f = c.faces.d; c.faces.d = c.faces.b; c.faces.b = temp;
+            } else {
+              c.y = z; c.z = -y;
+              temp = c.faces.u; c.faces.u = c.faces.b; c.faces.b = c.faces.d; c.faces.d = c.faces.f; c.faces.f = temp;
+            }
+          } else { // L
+            if (logicalDir === 'CW') {
+              c.y = z; c.z = -y;
+              temp = c.faces.u; c.faces.u = c.faces.b; c.faces.b = c.faces.d; c.faces.d = c.faces.f; c.faces.f = temp;
+            } else {
+              c.y = -z; c.z = y;
+              temp = c.faces.u; c.faces.u = c.faces.f; c.faces.f = c.faces.d; c.faces.d = c.faces.b; c.faces.b = temp;
+            }
           }
         } else if (rotationAxis === 'Y') {
-          // Rotate coordinates around Y axis
-          if (angleDegrees === -90) { // U, D'
-            c.x = -z;
-            c.z = x;
-            // Face colors cycle: l <- f <- r <- b <- l
-            temp = c.faces.l;
-            c.faces.l = c.faces.f;
-            c.faces.f = c.faces.r;
-            c.faces.r = c.faces.b;
-            c.faces.b = temp;
-          } else { // U', D
-            c.x = z;
-            c.z = -x;
-            // Face colors cycle: l <- b <- r <- f <- l
-            temp = c.faces.l;
-            c.faces.l = c.faces.b;
-            c.faces.b = c.faces.r;
-            c.faces.r = c.faces.f;
-            c.faces.f = temp;
+          if (baseMove === 'U') {
+            if (logicalDir === 'CW') {
+              c.x = -z; c.z = x;
+              temp = c.faces.l; c.faces.l = c.faces.f; c.faces.f = c.faces.r; c.faces.r = c.faces.b; c.faces.b = temp;
+            } else {
+              c.x = z; c.z = -x;
+              temp = c.faces.l; c.faces.l = c.faces.b; c.faces.b = c.faces.r; c.faces.r = c.faces.f; c.faces.f = temp;
+            }
+          } else { // D
+            if (logicalDir === 'CW') {
+              c.x = z; c.z = -x;
+              temp = c.faces.l; c.faces.l = c.faces.b; c.faces.b = c.faces.r; c.faces.r = c.faces.f; c.faces.f = temp;
+            } else {
+              c.x = -z; c.z = x;
+              temp = c.faces.l; c.faces.l = c.faces.f; c.faces.f = c.faces.r; c.faces.r = c.faces.b; c.faces.b = temp;
+            }
           }
         } else if (rotationAxis === 'Z') {
-          // Rotate coordinates around Z axis
-          if (angleDegrees === -90) { // F, f, B'
-            c.x = -y;
-            c.y = x;
-            // Face colors cycle: u <- l <- d <- r <- u
-            temp = c.faces.u;
-            c.faces.u = c.faces.l;
-            c.faces.l = c.faces.d;
-            c.faces.d = c.faces.r;
-            c.faces.r = temp;
-          } else { // F', f', B
-            c.x = y;
-            c.y = -x;
-            // Face colors cycle: u <- r <- d <- l <- u
-            temp = c.faces.u;
-            c.faces.u = c.faces.r;
-            c.faces.r = c.faces.d;
-            c.faces.d = c.faces.l;
-            c.faces.l = temp;
+          if (baseMove === 'F' || baseMove === 'f') {
+            if (logicalDir === 'CW') {
+              c.x = -y; c.y = x;
+              temp = c.faces.u; c.faces.u = c.faces.l; c.faces.l = c.faces.d; c.faces.d = c.faces.r; c.faces.r = temp;
+            } else {
+              c.x = y; c.y = -x;
+              temp = c.faces.u; c.faces.u = c.faces.r; c.faces.r = c.faces.d; c.faces.d = c.faces.l; c.faces.l = temp;
+            }
+          } else { // B
+            if (logicalDir === 'CW') {
+              c.x = y; c.y = -x;
+              temp = c.faces.u; c.faces.u = c.faces.r; c.faces.r = c.faces.d; c.faces.d = c.faces.l; c.faces.l = temp;
+            } else {
+              c.x = -y; c.y = x;
+              temp = c.faces.u; c.faces.u = c.faces.l; c.faces.l = c.faces.d; c.faces.d = c.faces.r; c.faces.r = temp;
+            }
           }
         }
       });
