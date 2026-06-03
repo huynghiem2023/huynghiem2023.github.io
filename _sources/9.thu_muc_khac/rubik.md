@@ -840,15 +840,15 @@
         <div class="step-guide">
           <strong>3. Khối trong khối (Cube in a Cube)</strong>
           <p>Tạo ra một khối Rubik 2x2x2 thu nhỏ nằm lồng góc bên trong khối Rubik 3x3x3 lớn, tạo chiều sâu 3D cực đỉnh.</p>
-          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F L F U' R U F2 L2 U' L' B D' B' L2 U</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="F L F U' R U F2 L2 U' L' B D' B' L2 U">Tạo hoa văn Khối trong khối</button>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L B L U' F U L2 B2 U' B' R D' R' B2 U</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="L B L U' F U L2 B2 U' B' R D' R' B2 U">Tạo hoa văn Khối trong khối</button>
         </div>
 
         <div class="step-guide">
           <strong>4. Khối trong khối trong khối (Cube in a Cube in a Cube)</strong>
           <p>Tạo ra hai lớp khối Rubik thu nhỏ lồng nhau ở góc (một khối 2x2x2 và một khối 1x1x1 bên trong).</p>
-          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U' L' U' F' R2 B' R F U B2 U B' L U' F U R F'</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="U' L' U' F' R2 B' R F U B2 U B' L U' F U R F'">Tạo hoa văn Khối trong khối trong khối</button>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U' B' U' L' F2 R' F L U R2 U R' B U' L U F L'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U' B' U' L' F2 R' F L U R2 U R' B U' L U F L'">Tạo hoa văn Khối trong khối trong khối</button>
         </div>
 
         <div class="step-guide">
