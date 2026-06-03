@@ -878,6 +878,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">L U B' U' R L' B R' F B' D R D' F'</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="L U B' U' R L' B R' F B' D R D' F'">Tạo hoa văn Con rắn</button>
         </div>
+
+        <div class="step-guide">
+          <strong>6. Hoa văn Chân gà (Chicken Feet)</strong>
+          <p>Tạo hiệu ứng trao đổi tâm và các góc/cạnh đặc biệt, tạo hình ảnh giống như các dấu chân gà in trên bề mặt các mặt Rubik.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F L' D' B' L F U F' D' F L2 B' R' U L2 D' F</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F L' D' B' L F U F' D' F L2 B' R' U L2 D' F">Tạo hoa văn Chân gà</button>
+        </div>
       </div>
     </div>
   </div>
