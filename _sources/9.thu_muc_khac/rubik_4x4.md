@@ -719,9 +719,9 @@
         
         <div class="step-guide">
           <strong>1. Hoa văn Bàn cờ xen kẽ (Alternating Checkerboard)</strong>
-          <p>Tạo hiệu ứng bàn cờ đan xen màu sắc hoàn hảo giữa các ô kề nhau (A, B, A, B) trên toàn bộ các mặt của khối 4x4.</p>
-          <div class="formula-box">Công thức: <span class="formula">L2 r2 R2 U2 d2 D2 B2 f2 F2</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="L L r r R R U U d d D D B B f f F F">Tạo hoa văn Bàn cờ xen kẽ 4x4</button>
+          <p>Tạo hiệu ứng bàn cờ tối ưu nhất trên khối 4x4. Do cấu tạo số lớp chẵn (4x4x4), việc tạo ô bàn cờ đan xen 100% trên cả 6 mặt là bất khả thi về mặt toán học. Thuật toán này sẽ tạo ô bàn cờ hoàn hảo trên 4 mặt (U, D, L, R) và hoa văn bàn cờ dạng khối đối xứng đẹp mắt trên 2 mặt còn lại (F, B).</p>
+          <div class="formula-box">Công thức: <span class="formula">M2 S2 E2 Rw2 Uw2 Rw2 Fw2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="l l L L r r R R f f F F b b B B u u U U d d D D r r u u r r f f">Tạo hoa văn Bàn cờ xen kẽ 4x4</button>
         </div>
 
         <div class="step-guide">
