@@ -719,24 +719,24 @@
         
         <div class="step-guide">
           <strong>1. Hoa văn Bàn cờ lớn (Super Checkerboard)</strong>
-          <p>Tạo hiệu ứng đan xen màu sắc dạng ô cờ vua trên toàn bộ các mặt của khối 4x4.</p>
-          <div class="formula-box">Công thức: <span class="formula">r2 l2 u2 d2 f2 b2</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="r r l l u u d d f f b b">Tạo hoa văn Bàn cờ 4x4</button>
+          <p>Tạo hiệu ứng bàn cờ đan xen màu sắc trên toàn bộ các mặt của khối 4x4, hoán đổi cả góc, cạnh và các viên tâm.</p>
+          <div class="formula-box">Công thức: <span class="formula">r2 R2 l2 L2 u2 U2 d2 D2 f2 F2 b2 B2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="r r R R l l L L u u U U d d D D f f F F b b B B">Tạo hoa văn Bàn cờ lớn 4x4</button>
         </div>
 
         <div class="step-guide">
           <strong>2. Hoa văn Nhụy hoa 2x2 (Flower Center 2x2)</strong>
-          <p>Hoán đổi các khối tâm 2x2 sang các mặt đối diện, tạo nên một "nhụy hoa lớn" bắt mắt ở giữa.</p>
+          <p>Hoán đổi các khối tâm 2x2 sang các mặt đối diện, tạo nên một "nhụy hoa lớn" bắt mắt ở chính giữa các mặt.</p>
           <div class="formula-box">Công thức: <span class="formula">r d r' d'</span> (xoay các lát trong)</div>
           <p>Để đơn giản trực quan, ta xoay các lát đôi ở giữa:</p>
           <button class="btn btn-success play-algo-pattern" data-algo="r d r' d'">Tạo hoa văn Nhụy hoa 2x2</button>
         </div>
 
         <div class="step-guide">
-          <strong>3. Sọc chéo đại lộ (Striped Big Blocks)</strong>
-          <p>Các sọc đứng lớn chạy quanh các bề mặt của khối 4x4.</p>
+          <strong>3. Hoa văn Bàn cờ ngoài (Outer Checkerboard)</strong>
+          <p>Tạo hiệu ứng bàn cờ ở các cạnh và góc ngoài cùng của khối Rubik, trong khi các khối tâm 2x2 giữ nguyên màu sắc.</p>
           <div class="formula-box">Công thức: <span class="formula">R2 L2 U2 D2 F2 B2</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="R R L L U U D D F F B B">Tạo sọc chéo 4x4</button>
+          <button class="btn btn-success play-algo-pattern" data-algo="R R L L U U D D F F B B">Tạo hoa văn Bàn cờ ngoài 4x4</button>
         </div>
       </div>
     </div>
