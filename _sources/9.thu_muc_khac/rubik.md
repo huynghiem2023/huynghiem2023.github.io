@@ -1200,6 +1200,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U2 F2 U2 R2 D2 F2 U2 L2 U2 F2 U2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U2 F2 U2 R2 D2 F2 U2 L2 U2 F2 U2">Tạo hoa văn Thập tự giá bao quanh</button>
         </div>
+
+        <div class="step-guide">
+          <strong>52. Ma trận (Matrix)</strong>
+          <p>Sự hoán đổi các cạnh và góc trông có vẻ hỗn loạn nhưng thực chất tuân theo một ma trận cực kỳ đối xứng.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R U R' U R U2 R' F R U R' U' F'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R U R' U R U2 R' F R U R' U' F'">Tạo hoa văn Ma trận</button>
+        </div>
       </div>
     </div>
   </div>
