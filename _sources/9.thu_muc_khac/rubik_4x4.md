@@ -733,7 +733,14 @@
         </div>
 
         <div class="step-guide">
-          <strong>3. Hoa văn Bàn cờ ngoài (Outer Checkerboard)</strong>
+          <strong>3. Bàn cờ lõm / Bàn cờ tâm (Inner Checkerboard)</strong>
+          <p>Ngược lại với hoa văn trên, khung viền ngoài cùng giữ nguyên hoàn toàn, nhưng cụm 4 viên tâm 2x2 ở giữa lại đan xen màu như bàn cờ. Trông rất có chiều sâu!</p>
+          <div class="formula-box">Công thức: <span class="formula">r2 l2 u2 d2 f2 b2</span> (xoay các lát trong)</div>
+          <button class="btn btn-success play-algo-pattern" data-algo="r r R R l l L L u u U U d d D D f f F F b b B B">Tạo hoa văn Bàn cờ tâm 4x4</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>4. Hoa văn Bàn cờ ngoài (Outer Checkerboard)</strong>
           <p>Tạo hiệu ứng bàn cờ ở các cạnh và góc ngoài cùng của khối Rubik, trong khi các khối tâm 2x2 giữ nguyên màu sắc.</p>
           <div class="formula-box">Công thức: <span class="formula">R2 L2 U2 D2 F2 B2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="R R L L U U D D F F B B">Tạo hoa văn Bàn cờ ngoài 4x4</button>
