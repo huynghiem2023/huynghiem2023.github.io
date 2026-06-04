@@ -1074,6 +1074,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 U2 F2 B2 U2 B2 R2 D2 R2 L2 D2 L2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F2 U2 F2 B2 U2 B2 R2 D2 R2 L2 D2 L2">Tạo hoa văn Hai đường chéo</button>
         </div>
+
+        <div class="step-guide">
+          <strong>34. Cầu cạn (Viaduct)</strong>
+          <p>Một biến thể đơn giản nhưng tạo ra hiệu ứng các trụ cầu và đường nét liền mạch như một cây cầu nối liền các mặt.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R2 U2 R2 U2 R2 U2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R2 U2 R2 U2 R2 U2">Tạo hoa văn Cầu cạn</button>
+        </div>
       </div>
     </div>
   </div>
