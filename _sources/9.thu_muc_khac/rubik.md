@@ -1088,6 +1088,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R2 L2 D F2 R2 L2 B2 U' F2 B2 U' F2 B2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="R2 L2 D F2 R2 L2 B2 U' F2 B2 U' F2 B2">Tạo hoa văn Khăn trải bàn</button>
         </div>
+
+        <div class="step-guide">
+          <strong>36. Hai đỉnh chéo (Twin Peaks)</strong>
+          <p>Tạo điểm nhấn vào hai góc đối diện nhau, trong khi các phần còn lại được giữ nguyên màu gốc hoặc chỉ thay đổi cực nhỏ.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U L2 B2 R2 U R2 B2 L2 U</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U L2 B2 R2 U R2 B2 L2 U">Tạo hoa văn Hai đỉnh chéo</button>
+        </div>
       </div>
     </div>
   </div>
