@@ -394,6 +394,7 @@ parts:
     chapters:
     - file: 9.thu_muc_khac/co_tuong
     - file: 9.thu_muc_khac/rubik
+    - file: 9.thu_muc_khac/rubik_4x4
   #   - file: 9.thu_muc_khac/arithmetics
   #     options:
   #       numbered: true
