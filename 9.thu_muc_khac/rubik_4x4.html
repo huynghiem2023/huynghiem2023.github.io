@@ -1480,24 +1480,38 @@ document.write(`
         </div>
 
         <div class="step-guide">
-          <strong>3. Bàn cờ lõm / Bàn cờ tâm (Inner Checkerboard)</strong>
-          <p>Ngược lại với hoa văn trên, khung viền ngoài cùng giữ nguyên hoàn toàn, nhưng cụm 4 viên tâm 2x2 ở giữa lại đan xen màu như bàn cờ. Trông rất có chiều sâu!</p>
+          <strong>3. Bàn cờ viền - Lát trong (Inner Slice Checkerboard)</strong>
+          <p>Xoay các lát bên trong để tạo hoa văn bàn cờ trên các cạnh của khối Rubik, trong khi các khối góc và cụm tâm 2x2 ở giữa vẫn giữ nguyên màu sắc đồng nhất.</p>
           <div class="formula-box">Công thức: <span class="formula">r2 l2 u2 d2 f2 b2</span> (xoay các lát trong)</div>
-          <button class="btn btn-success play-algo-pattern" data-algo="r r R R l l L L u u U U d d D D f f F F b b B B">Tạo hoa văn Bàn cờ tâm 4x4</button>
+          <button class="btn btn-success play-algo-pattern" data-algo="r r R R l l L L u u U U d d D D f f F F b b B B">Tạo hoa văn Bàn cờ viền trong 4x4</button>
         </div>
 
         <div class="step-guide">
           <strong>4. Khối 3x3x3 lồng trong 4x4x4 (3x3 in a 4x4)</strong>
-          <p>Tạo ảo giác có một khối Rubik 3x3x3 bị kẹt ở góc của khối 4x4x4. Công thức này sử dụng các bước xoay kép (Wide moves).</p>
-          <div class="formula-box">Công thức: <span class="formula">Fw Lw Fw Uw' Rw Uw Fw2 Lw2 Uw' Lw' Bw Dw' Bw' Lw2 Uw</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="f l f u' r u f f l l u' l' b d' b' l l u">Tạo hoa văn 3x3 lồng 4x4</button>
+          <p>Tạo ảo giác có một khối Rubik 3x3x3 bị kẹt ở góc của khối 4x4x4. Công thức này chỉ sử dụng các nước xoay lớp ngoài cùng.</p>
+          <div class="formula-box">Công thức: <span class="formula">F L F U' R U F2 L2 U' L' B D' B' L2 U</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F L F U' R U F2 L2 U' L' B D' B' L2 U">Tạo hoa văn 3x3 lồng 4x4</button>
         </div>
 
         <div class="step-guide">
-          <strong>5. Hoa văn Bàn cờ ngoài (Outer Checkerboard)</strong>
-          <p>Tạo hiệu ứng bàn cờ ở các cạnh và góc ngoài cùng của khối Rubik, trong khi các khối tâm 2x2 giữ nguyên màu sắc.</p>
+          <strong>5. Khối 2x2x2 lồng trong 4x4x4 (2x2 in a 4x4)</strong>
+          <p>Tạo ra một khối Rubik 2x2x2 nhỏ xíu nằm lọt thỏm ở một góc. Công thức này sử dụng các bước xoay kép (Wide moves).</p>
+          <div class="formula-box">Công thức: <span class="formula">Fw Lw Fw Uw' Rw Uw Fw2 Lw2 Uw' Lw' Bw Dw' Bw' Lw2 Uw</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="f l f u' r u f f l l u' l' b d' b' l l u">Tạo hoa văn 2x2 lồng 4x4</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>6. Ba khối lồng nhau (Triple Cube in a Cube)</strong>
+          <p>Sự kết hợp hoàn hảo để tạo ra hiệu ứng: Khối 2x2x2 nằm trong khối 3x3x3, và khối 3x3x3 lại nằm trong khối 4x4x4! Các em chỉ cần thực hiện liên tiếp công thức (5) rồi đến công thức (4).</p>
+          <div class="formula-box">Công thức: <span class="formula">(Fw Lw Fw Uw' Rw Uw Fw2 Lw2 Uw' Lw' Bw Dw' Bw' Lw2 Uw) + (F L F U' R U F2 L2 U' L' B D' B' L2 U)</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="f l f u' r u f f l l u' l' b d' b' l l u F L F U' R U F F L L U' L' B D' B' L L U">Tạo hoa văn Ba khối lồng nhau</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>7. Bàn cờ viền - Lớp ngoài (Outer Slice Checkerboard)</strong>
+          <p>Xoay các lớp ngoài cùng để hoán đổi các cặp cạnh, tạo hiệu ứng viền bàn cờ tương tự như kiểu xoay lát trong nhưng ở hướng đối lập (các khối góc và cụm tâm 2x2 vẫn giữ nguyên màu gốc).</p>
           <div class="formula-box">Công thức: <span class="formula">R2 L2 U2 D2 F2 B2</span></div>
-          <button class="btn btn-success play-algo-pattern" data-algo="R R L L U U D D F F B B">Tạo hoa văn Bàn cờ ngoài 4x4</button>
+          <button class="btn btn-success play-algo-pattern" data-algo="R R L L U U D D F F B B">Tạo hoa văn Bàn cờ viền ngoài 4x4</button>
         </div>
       </div>
     </div>
