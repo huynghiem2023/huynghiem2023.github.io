@@ -1284,6 +1284,7 @@ document.write(`
         <button class="tab-btn" data-step="step3">3. Giải như 3x3</button>
         <button class="tab-btn" data-step="parity1">4. OLL Parity</button>
         <button class="tab-btn" data-step="parity2">5. PLL Parity</button>
+        <button class="tab-btn" data-step="yau">⭐ Nâng cao (Yau / 3-2-3)</button>
         <button class="tab-btn" data-step="patterns">🎨 Hoa văn 4x4</button>
       </div>
       
@@ -1417,6 +1418,39 @@ document.write(`
         </div>
         <div class="algo-player">
           <button class="btn btn-success play-algo" data-algo="r r U U r r u u r r u u">Chạy thuật toán sửa góc/cạnh PLL Parity</button>
+        </div>
+        <button class="btn btn-primary next-step-btn" data-next="yau" style="width: 100%; padding: 12px; margin-top: 15px;">⭐ Học phương pháp giải nhanh Nâng cao (Yau) ➔</button>
+      </div>
+
+      <!-- Tab Yau Method & 3-2-3 Edge Pairing -->
+      <div class="tab-content hidden" id="tab-yau">
+        <div class="tab-header-row">
+          <h3>Phương pháp nâng cao Yau & Ghép cạnh 3-2-3</h3>
+          <button class="btn-read-aloud" data-target="tab-yau">Đọc hướng dẫn 🔊</button>
+        </div>
+        <p>Để tăng tốc độ giải Rubik 4x4x4 xuống dưới 1 phút, các speedcuber hàng đầu sẽ chuyển từ phương pháp rút gọn (Reduction) cơ bản sang phương pháp <strong>Yau Method</strong> kết hợp kỹ thuật <strong>ghép cạnh 3-2-3</strong>.</p>
+        
+        <h4>Các bước thực hiện phương pháp Yau</h4>
+        <div class="step-guide">
+          <ol>
+            <li><strong>Giải 2 tâm đối diện:</strong> Thường giải quyết tâm Trắng ở mặt đáy (Bottom) và tâm Vàng ở mặt trên (Up) trước.</li>
+            <li><strong>Giải 3 cạnh chữ thập đáy (First 3 Cross Edges):</strong> Tìm và ghép 3 cặp cạnh màu Trắng (ví dụ: Trắng-Đỏ, Trắng-Xanh lá, Trắng-Xanh dương) rồi đặt chúng vào đúng vị trí chữ thập ở đáy. Chừa lại 1 vị trí cạnh Trắng chưa giải để làm khe hở.</li>
+            <li><strong>Giải quyết 4 tâm bên hông:</strong> Tận dụng khe hở và các lát xoay đôi ở giữa để giải quyết nhanh 4 tâm bên (Đỏ, Xanh lá, Cam, Xanh dương) mà không làm hỏng 3 cạnh Trắng đã khóa ở đáy.</li>
+            <li><strong>Hoàn thành chữ thập đáy (Cross):</strong> Ghép cặp cạnh Trắng cuối cùng (Trắng-Cam) và đưa vào khe đáy để hoàn thành chữ thập Trắng hoàn chỉnh.</li>
+            <li><strong>Ghép 8 cạnh còn lại (3-2-3 Edge Pairing):</strong> Đây là bước đột phá giúp giải quyết đồng thời nhiều cạnh.</li>
+            <li><strong>Giai đoạn 3x3x3:</strong> Giải phần còn lại như khối 3x3 bình thường. Lúc này chữ thập đáy đã xong, bạn có thể đi thẳng vào F2L ngay lập tức!</li>
+          </ol>
+        </div>
+
+        <h4>Kỹ thuật ghép cạnh nâng cao 3-2-3</h4>
+        <p>Thay vì ghép từng cạnh riêng lẻ, ta ghép 3 cặp cạnh cùng lúc, sau đó ghép 2 cặp tiếp theo và 3 cặp cuối cùng. Thuật toán lật cạnh và chèn (Flipping & Inserting) kinh điển được dùng là:</p>
+        <div class="formula-box">
+          Công thức lật cạnh: <span class="formula">u' R U R' F R' F' R u</span>
+        </div>
+        <p><em>* Giải thích: Xoay lớp trên đôi (u') sang phải để tách cạnh, thực hiện thuật toán lật viên cạnh bên phải, rồi trả lớp trên đôi (u) về để ghép đồng thời cả 3 cặp cạnh.</em></p>
+        
+        <div class="algo-player">
+          <button class="btn btn-success play-algo" data-algo="u' R U R' F R' F' R u">Chạy thuật toán lật cạnh ghép 3-2-3</button>
         </div>
         <button class="btn btn-primary next-step-btn" data-next="patterns" style="width: 100%; padding: 12px; margin-top: 15px;">Tiếp tục: Các hoa văn 4x4x4 đẹp ➔</button>
       </div>
