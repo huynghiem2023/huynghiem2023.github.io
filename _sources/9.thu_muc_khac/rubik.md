@@ -1123,6 +1123,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U R2 L2 U D' F2 B2 D'</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U R2 L2 U D' F2 B2 D'">Tạo hoa văn Chiếc đệm</button>
         </div>
+
+        <div class="step-guide">
+          <strong>41. Trực thăng (Helicopter)</strong>
+          <p>Hình ảnh các dải màu vát chéo giao nhau trông giống hệt như cánh quạt của một chiếc máy bay trực thăng đang xoay.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R2 L2 D2 B2 U2 F2 R2 L2 B2 U2 F2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R2 L2 D2 B2 U2 F2 R2 L2 B2 U2 F2">Tạo hoa văn Trực thăng</button>
+        </div>
       </div>
     </div>
   </div>
