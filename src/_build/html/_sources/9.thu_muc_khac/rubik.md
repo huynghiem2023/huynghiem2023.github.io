@@ -1179,6 +1179,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U D R2 U' D' F2 B2 U D</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U D R2 U' D' F2 B2 U D">Tạo hoa văn Hoa Tulip</button>
         </div>
+
+        <div class="step-guide">
+          <strong>49. Hộp quà - Kiểu 2 (Gift Box - Type 2)</strong>
+          <p>Tạo ra các đường viền giao nhau sắc nét, trông như dải ruy băng vắt chéo để gói một hộp quà.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U B2 R2 B2 L2 F2 R2 D' B2 F2 L2 F2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U B2 R2 B2 L2 F2 R2 D' B2 F2 L2 F2">Tạo hoa văn Hộp quà (Kiểu 2)</button>
+        </div>
       </div>
     </div>
   </div>
