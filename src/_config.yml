@@ -38,19 +38,9 @@ html:
 # google_analytics:
   # tracking_id: G-D3SK1PZ4FM
 
-# sphinx:
-#   config:
-#     # html_theme: sphinx_book_theme
-#     html_theme: sphinx_rtd_theme
-#     # html_theme: furo
-#     # html_theme: renku
-#     # html_theme: sphinx_material
-#     # html_theme: conestack
-#     # html_theme: alabaster
-#     # html_theme: press
-#     # html_theme: nature
-#     # html_theme: pydata_sphinx_theme
-#     html_context:
-#       default_mode: light
+sphinx:
+  config:
+    html_extra_path:
+      - CNAME
 
 
