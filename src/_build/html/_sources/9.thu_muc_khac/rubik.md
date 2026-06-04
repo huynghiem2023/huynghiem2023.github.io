@@ -1109,6 +1109,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R L F B U D R L F B U D</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="R L F B U D R L F B U D">Tạo hoa văn Xếp gạch</button>
         </div>
+
+        <div class="step-guide">
+          <strong>39. Chân vịt (Duck Feet)</strong>
+          <p>Các cụm viên góc và cạnh tạo thành một hình dạng rẽ nhánh xòe ra ba hướng giống như màng chân của chú vịt.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F R' B L U F' U' F L' B' R F'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F R' B L U F' U' F L' B' R F'">Tạo hoa văn Chân vịt</button>
+        </div>
       </div>
     </div>
   </div>
