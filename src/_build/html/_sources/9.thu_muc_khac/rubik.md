@@ -481,6 +481,44 @@
   top: 0;
   transform-style: preserve-3d;
 }
+
+.tab-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+.tab-header-row h3 {
+  margin: 0 !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+.btn-read-aloud {
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: #c084fc;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  font-weight: 600;
+}
+.btn-read-aloud:hover {
+  background: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.15);
+}
+.btn-read-aloud.active {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  color: white;
+}
 </style>
 
 <div class="rubik-app-wrapper">
@@ -556,7 +594,10 @@
       
       <!-- Tab Intro -->
       <div class="tab-content" id="tab-intro">
-        <h3>Tìm hiểu cấu tạo Rubik 3x3x3</h3>
+        <div class="tab-header-row">
+          <h3>Tìm hiểu cấu tạo Rubik 3x3x3</h3>
+          <button class="btn-read-aloud" data-target="tab-intro">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Để giải được Rubik, đầu tiên các em cần nhớ cấu tạo gồm 3 loại viên chính:</p>
         <ul>
           <li><strong>6 viên tâm (Center):</strong> Nằm ở chính giữa mỗi mặt, có đúng 1 màu và cố định, không thể dịch chuyển. Tâm màu nào đại diện cho màu của mặt đó.</li>
@@ -596,7 +637,10 @@
       
       <!-- Tab 1 -->
       <div class="tab-content hidden" id="tab-step1">
-        <h3>Bước 1: Nhị vàng cánh trắng (Daisy) & Chữ thập trắng</h3>
+        <div class="tab-header-row">
+          <h3>Bước 1: Nhị vàng cánh trắng (Daisy) & Chữ thập trắng</h3>
+          <button class="btn-read-aloud" data-target="tab-step1">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Tạo chữ thập trắng ở mặt dưới đáy, sao cho phần cạnh trùng màu với tâm hông.</p>
         <div class="step-guide">
           <strong>Cách làm dễ nhất của Thầy Huy:</strong>
@@ -617,7 +661,10 @@
       
       <!-- Tab 2 -->
       <div class="tab-content hidden" id="tab-step2">
-        <h3>Bước 2: Giải các viên góc Trắng (Hoàn thành Tầng 1)</h3>
+        <div class="tab-header-row">
+          <h3>Bước 2: Giải các viên góc Trắng (Hoàn thành Tầng 1)</h3>
+          <button class="btn-read-aloud" data-target="tab-step2">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Đưa 4 viên góc màu trắng về đúng góc ở mặt đáy, hoàn thành mặt trắng và tầng 1 trùng màu tâm.</p>
         <div class="step-guide">
           <strong>Các bước giải:</strong>
@@ -640,7 +687,10 @@
       
       <!-- Tab 3 -->
       <div class="tab-content hidden" id="tab-step3">
-        <h3>Bước 3: Giải các viên cạnh tầng 2 (Hoàn thành Tầng 2)</h3>
+        <div class="tab-header-row">
+          <h3>Bước 3: Giải các viên cạnh tầng 2 (Hoàn thành Tầng 2)</h3>
+          <button class="btn-read-aloud" data-target="tab-step3">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Đưa 4 viên cạnh ở tầng 3 không có màu vàng về đúng chỗ ở tầng 2.</p>
         <div class="step-guide">
           <strong>Các bước giải:</strong>
@@ -668,7 +718,10 @@
       
       <!-- Tab 4 -->
       <div class="tab-content hidden" id="tab-step4">
-        <h3>Bước 4: Tạo chữ thập vàng ở mặt trên</h3>
+        <div class="tab-header-row">
+          <h3>Bước 4: Tạo chữ thập vàng ở mặt trên</h3>
+          <button class="btn-read-aloud" data-target="tab-step4">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Tạo chữ thập vàng ở mặt trên cùng mà không làm hỏng 2 tầng đã giải.</p>
         <div class="step-guide">
           <p>Nhìn vào các cạnh màu vàng ở mặt trên, ta sẽ gặp 1 trong 3 trạng thái:</p>
@@ -691,7 +744,10 @@
       
       <!-- Tab 5 -->
       <div class="tab-content hidden" id="tab-step5">
-        <h3>Bước 5: Hoán vị cạnh vàng cho đúng tâm hông</h3>
+        <div class="tab-header-row">
+          <h3>Bước 5: Hoán vị cạnh vàng cho đúng tâm hông</h3>
+          <button class="btn-read-aloud" data-target="tab-step5">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Đưa các cạnh của chữ thập vàng trùng màu hông với các mặt bên.</p>
         <div class="step-guide">
           <ol>
@@ -713,7 +769,10 @@
       
       <!-- Tab 6 -->
       <div class="tab-content hidden" id="tab-step6">
-        <h3>Bước 6: Đưa 4 viên góc vàng về đúng vị trí</h3>
+        <div class="tab-header-row">
+          <h3>Bước 6: Đưa 4 viên góc vàng về đúng vị trí</h3>
+          <button class="btn-read-aloud" data-target="tab-step6">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Đưa các viên góc về đúng vị trí góc của nó (không cần đúng hướng xoay màu).</p>
         <div class="step-guide">
           <ol>
@@ -735,7 +794,10 @@
       
       <!-- Tab 7 -->
       <div class="tab-content hidden" id="tab-step7">
-        <h3>Bước 7: Định hướng góc vàng để hoàn thành Rubik</h3>
+        <div class="tab-header-row">
+          <h3>Bước 7: Định hướng góc vàng để hoàn thành Rubik</h3>
+          <button class="btn-read-aloud" data-target="tab-step7">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Mục tiêu: Lật hướng các góc vàng sao cho mặt màu vàng hướng lên trên hết để hoàn thành giải Rubik.</p>
         <div class="step-guide" style="border-left-color: #ef4444; background: rgba(239, 68, 68, 0.05);">
           <p style="color: #ef4444; font-weight: 700;">⚠️ CỰC KỲ QUAN TRỌNG - ĐỌC KỸ:</p>
@@ -760,7 +822,10 @@
       
       <!-- Tab CFOP -->
       <div class="tab-content hidden" id="tab-cfop">
-        <h3>Phương pháp giải nhanh nâng cao CFOP</h3>
+        <div class="tab-header-row">
+          <h3>Phương pháp giải nhanh nâng cao CFOP</h3>
+          <button class="btn-read-aloud" data-target="tab-cfop">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>CFOP (còn gọi là phương pháp Fridrich) là phương pháp giải Rubik phổ biến nhất thế giới của các tuyển thủ tốc độ. Phương pháp này gồm 4 bước chính:</p>
         <div class="notation-grid" style="grid-template-columns: repeat(4, 1fr);">
           <div style="text-align: center;"><strong>C</strong>ross<br><small>(Chữ thập đáy)</small></div>
@@ -838,7 +903,10 @@
 
       <!-- Tab Patterns -->
       <div class="tab-content hidden" id="tab-patterns">
-        <h3>Tạo các hoa văn Rubik 3x3x3 tuyệt đẹp</h3>
+        <div class="tab-header-row">
+          <h3>Tạo các hoa văn Rubik 3x3x3 tuyệt đẹp</h3>
+          <button class="btn-read-aloud" data-target="tab-patterns">Đọc hướng dẫn 🔊</button>
+        </div>
         <p>Từ một khối Rubik đã giải hoàn chỉnh, các em có thể xoay theo các công thức đặc biệt dưới đây để tạo ra những mẫu hoa văn cực kỳ bắt mắt. Hãy bấm nút để khối Rubik 3D tự động xoay biểu diễn nhé!</p>
         
         <div class="step-guide">
@@ -1304,6 +1372,11 @@
       return;
     }
     
+    // Play turn sound
+    try {
+      playTurnSound(Math.min(400, animSpeedMs));
+    } catch (e) {}
+    
     isAnimating = true;
     const isPrime = moveCode.includes("'");
     const baseMove = moveCode.replace("'", "");
@@ -1664,6 +1737,11 @@
   
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => {
+      // Stop speech when changing tabs
+      try {
+        stopSpeech();
+      } catch (e) {}
+      
       // remove active classes
       tabButtons.forEach(b => b.classList.remove('active'));
       tabContents.forEach(c => c.classList.add('hidden'));
@@ -1715,5 +1793,197 @@
       });
     });
   }
+
+  // --- Audio / TTS helper code ---
+  let audioCtx = null;
+  
+  function initAudio() {
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+  }
+
+  let noiseBuffer = null;
+  function getNoiseBuffer() {
+    if (noiseBuffer) return noiseBuffer;
+    initAudio();
+    const bufferSize = audioCtx.sampleRate * 2;
+    const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) {
+      data[i] = Math.random() * 2 - 1;
+    }
+    noiseBuffer = buffer;
+    return noiseBuffer;
+  }
+
+  function playTurnSound(durationMs) {
+    try {
+      initAudio();
+      if (!audioCtx) return;
+      
+      const now = audioCtx.currentTime;
+      const durationSec = durationMs / 1000;
+      
+      const noiseNode = audioCtx.createBufferSource();
+      noiseNode.buffer = getNoiseBuffer();
+      
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = 'bandpass';
+      filter.frequency.setValueAtTime(1200, now);
+      filter.frequency.exponentialRampToValueAtTime(700, now + durationSec);
+      filter.Q.setValueAtTime(3, now);
+      
+      const noiseGain = audioCtx.createGain();
+      noiseGain.gain.setValueAtTime(0.08, now);
+      noiseGain.gain.exponentialRampToValueAtTime(0.001, now + durationSec);
+      
+      noiseNode.connect(filter);
+      filter.connect(noiseGain);
+      noiseGain.connect(audioCtx.destination);
+      
+      const osc = audioCtx.createOscillator();
+      const oscGain = audioCtx.createGain();
+      
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(100, now + durationSec - 0.05);
+      osc.frequency.exponentialRampToValueAtTime(30, now + durationSec);
+      
+      oscGain.gain.setValueAtTime(0.0, now);
+      oscGain.gain.setValueAtTime(0.0, now + durationSec - 0.05);
+      oscGain.gain.linearRampToValueAtTime(0.15, now + durationSec - 0.04);
+      oscGain.gain.exponentialRampToValueAtTime(0.001, now + durationSec);
+      
+      osc.connect(oscGain);
+      oscGain.connect(audioCtx.destination);
+      
+      noiseNode.start(now);
+      noiseNode.stop(now + durationSec);
+      
+      osc.start(now + durationSec - 0.05);
+      osc.stop(now + durationSec);
+    } catch (e) {
+      console.warn("Web Audio turn sound failed: ", e);
+    }
+  }
+
+  let activeUtterance = null;
+  let activeSpeechButton = null;
+
+  function stopSpeech() {
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+    if (activeSpeechButton) {
+      activeSpeechButton.innerHTML = "Đọc hướng dẫn 🔊";
+      activeSpeechButton.classList.remove('active');
+      activeSpeechButton = null;
+    }
+    activeUtterance = null;
+  }
+
+  function speakTab(tabId, buttonEl) {
+    try {
+      initAudio();
+    } catch (e) {}
+    
+    if (activeUtterance) {
+      const wasActive = (activeSpeechButton === buttonEl);
+      stopSpeech();
+      if (wasActive) {
+        return;
+      }
+    }
+    
+    const tabEl = document.getElementById(tabId);
+    if (!tabEl) return;
+    
+    let textParts = [];
+    
+    function getCleanText(node) {
+      let text = "";
+      node.childNodes.forEach(child => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          text += child.textContent;
+        } else if (child.nodeType === Node.ELEMENT_NODE) {
+          if (child.classList.contains('formula-box') || 
+              child.classList.contains('btn') || 
+              child.classList.contains('formula') || 
+              child.tagName === 'BUTTON' || 
+              child.classList.contains('tab-header-row')) {
+            return;
+          }
+          text += getCleanText(child) + " ";
+        }
+      });
+      return text;
+    }
+    
+    let rawText = getCleanText(tabEl);
+    let cleanText = rawText.replace(/\s+/g, ' ').trim();
+    
+    if (!cleanText) return;
+    
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'vi-VN';
+    utterance.rate = 0.95;
+    utterance.pitch = 1.0;
+    
+    if (window.speechSynthesis) {
+      const voices = window.speechSynthesis.getVoices();
+      const viVoice = voices.find(v => v.lang.includes('vi') || v.lang.includes('VI'));
+      if (viVoice) {
+        utterance.voice = viVoice;
+      }
+    }
+    
+    utterance.onstart = () => {
+      buttonEl.innerHTML = "Dừng đọc ⏹";
+      buttonEl.classList.add('active');
+      activeSpeechButton = buttonEl;
+      activeUtterance = utterance;
+    };
+    
+    utterance.onend = () => {
+      if (activeSpeechButton === buttonEl) {
+        buttonEl.innerHTML = "Đọc hướng dẫn 🔊";
+        buttonEl.classList.remove('active');
+        activeSpeechButton = null;
+        activeUtterance = null;
+      }
+    };
+    
+    utterance.onerror = (e) => {
+      console.warn("Speech Synthesis error: ", e);
+      if (activeSpeechButton === buttonEl) {
+        buttonEl.innerHTML = "Đọc hướng dẫn 🔊";
+        buttonEl.classList.remove('active');
+        activeSpeechButton = null;
+        activeUtterance = null;
+      }
+    };
+    
+    window.speechSynthesis.speak(utterance);
+  }
+
+  // Read Aloud click listener
+  document.querySelectorAll('.btn-read-aloud').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const targetId = btn.getAttribute('data-target');
+      speakTab(targetId, btn);
+    });
+  });
+
+  // Global user interaction listener to wake up AudioContext
+  document.body.addEventListener('click', () => {
+    try {
+      initAudio();
+    } catch (e) {}
+  }, { once: true });
+
 })();
 </script>
