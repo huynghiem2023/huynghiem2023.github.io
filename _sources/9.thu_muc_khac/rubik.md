@@ -1095,6 +1095,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U L2 B2 R2 U R2 B2 L2 U</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U L2 B2 R2 U R2 B2 L2 U">Tạo hoa văn Hai đỉnh chéo</button>
         </div>
+
+        <div class="step-guide">
+          <strong>37. Rắn Black Mamba (Black Mamba)</strong>
+          <p>Một đường màu zic-zac đặc trưng chạy bao quanh, gợi liên tưởng đến phần vân lưng của loài rắn mamba đen.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R D R F R' F' B D R' U' B' U D2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R D R F R' F' B D R' U' B' U D2">Tạo hoa văn Rắn Black Mamba</button>
+        </div>
       </div>
     </div>
   </div>
