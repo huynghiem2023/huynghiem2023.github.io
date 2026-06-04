@@ -390,9 +390,10 @@ parts:
       sections:
       # - glob: 7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/*
       - file: 7.hd_cac_loai_may_casio/casio_fx_880_btg/notebooks/lesson_1.md
-  - caption: 9.thu_muc_khac
+  - caption: 9. Góc giải trí
     chapters:
     - file: 9.thu_muc_khac/co_tuong
+    - file: 9.thu_muc_khac/rubik
   #   - file: 9.thu_muc_khac/arithmetics
   #     options:
   #       numbered: true
