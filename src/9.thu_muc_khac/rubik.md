@@ -1165,6 +1165,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U2 D2 F2 B2 L2 R2 U D' R L' F B' U D'</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U2 D2 F2 B2 L2 R2 U D' R L' F B' U D'">Tạo hoa văn Bàn cờ & Chấm tâm</button>
         </div>
+
+        <div class="step-guide">
+          <strong>47. Sọc chéo (Diagonal Stripes)</strong>
+          <p>Các đường sọc màu vắt chéo một cách lạ mắt qua các bề mặt của khối.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F U' B L U' F' U2 B' U R2 B R2 B' U2 L' U</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F U' B L U' F' U2 B' U R2 B R2 B' U2 L' U">Tạo hoa văn Sọc chéo</button>
+        </div>
       </div>
     </div>
   </div>
