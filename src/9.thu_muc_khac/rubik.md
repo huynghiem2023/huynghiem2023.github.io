@@ -1025,6 +1025,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U2 R2 L2 F2 B2 D2 L2 R2 F2 B2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U2 R2 L2 F2 B2 D2 L2 R2 F2 B2">Tạo hoa văn Chữ X</button>
         </div>
+
+        <div class="step-guide">
+          <strong>27. Vòng hoán đổi (Exchanged Rings)</strong>
+          <p>Một hoa văn trừu tượng tinh tế, giống như các vòng tròn màu sắc lồng vào nhau bị hoán đổi.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">B' U' B' L' D B U D2 B U L D' L' U' L2 D</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="B' U' B' L' D B U D2 B U L D' L' U' L2 D">Tạo hoa văn Vòng hoán đổi</button>
+        </div>
       </div>
     </div>
   </div>
