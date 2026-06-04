@@ -1018,6 +1018,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 R2 F2 R2 F2 R2 U2 F2 R2 F2 R2 F2 R2 U2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="F2 R2 F2 R2 F2 R2 U2 F2 R2 F2 R2 F2 R2 U2">Tạo hoa văn Hình vuông nhỏ</button>
         </div>
+
+        <div class="step-guide">
+          <strong>26. Chữ X (The X)</strong>
+          <p>Tạo ra một hình chữ X lớn ở mỗi mặt của khối Rubik.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U2 R2 L2 F2 B2 D2 L2 R2 F2 B2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U2 R2 L2 F2 B2 D2 L2 R2 F2 B2">Tạo hoa văn Chữ X</button>
+        </div>
       </div>
     </div>
   </div>
