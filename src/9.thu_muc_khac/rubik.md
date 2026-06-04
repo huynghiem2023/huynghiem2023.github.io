@@ -1186,6 +1186,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">U B2 R2 B2 L2 F2 R2 D' B2 F2 L2 F2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="U B2 R2 B2 L2 F2 R2 D' B2 F2 L2 F2">Tạo hoa văn Hộp quà (Kiểu 2)</button>
         </div>
+
+        <div class="step-guide">
+          <strong>50. Bánh rán kẹp (Sandwich)</strong>
+          <p>Hai mặt đối diện giữ nguyên một màu, trong khi các mặt xung quanh tạo thành lớp kẻ sọc như đang "kẹp" lại.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">F2 R2 L2 B2 U2 D2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F2 R2 L2 B2 U2 D2">Tạo hoa văn Bánh rán kẹp</button>
+        </div>
       </div>
     </div>
   </div>
