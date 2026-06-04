@@ -1102,6 +1102,13 @@
           <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R D R F R' F' B D R' U' B' U D2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="R D R F R' F' B D R' U' B' U D2">Tạo hoa văn Rắn Black Mamba</button>
         </div>
+
+        <div class="step-guide">
+          <strong>38. Xếp gạch (Tetris)</strong>
+          <p>Các mảng màu chia theo hình dạng khối chữ T hoặc L, tương tự như các khối gạch rơi xuống trong trò chơi điện tử Tetris kinh điển.</p>
+          <div class="formula-box" style="font-size: 1rem;">Công thức: <span class="formula">R L F B U D R L F B U D</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R L F B U D R L F B U D">Tạo hoa văn Xếp gạch</button>
+        </div>
       </div>
     </div>
   </div>
