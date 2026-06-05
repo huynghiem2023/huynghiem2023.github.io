@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -1512,6 +1512,55 @@ document.write(`
           <p>Xoay các lớp ngoài cùng để hoán đổi các cặp cạnh, tạo hiệu ứng viền bàn cờ tương tự như kiểu xoay lát trong nhưng ở hướng đối lập (các khối góc và cụm tâm 2x2 vẫn giữ nguyên màu gốc).</p>
           <div class="formula-box">Công thức: <span class="formula">R2 L2 U2 D2 F2 B2</span></div>
           <button class="btn btn-success play-algo-pattern" data-algo="R R L L U U D D F F B B">Tạo hoa văn Bàn cờ viền ngoài 4x4</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>8. Hoa văn Rắn Anaconda (Anaconda Snake)</strong>
+          <p>Tạo hình một chú rắn màu sắc uốn lượn xung quanh toàn bộ khối Rubik, một trong những hoa văn cổ điển rất bắt mắt.</p>
+          <div class="formula-box">Công thức: <span class="formula">L U B' U' R L' B R' F B' D R D' F'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="L U B' U' R L' B R' F B' D R D' F'">Tạo hoa văn Rắn Anaconda</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>9. Hoa văn Trăn Python (Python Snake)</strong>
+          <p>Tương tự như Anaconda, tạo hoa văn đường vây uốn quanh giống như con trăn lớn, mang lại vẻ đẹp độc đáo và cân đối.</p>
+          <div class="formula-box">Công thức: <span class="formula">F2 R' B' U R' L F' D L' D2 L2 F2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F F R' B' U R' L F' D L' D D L L F F">Tạo hoa văn Trăn Python</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>10. Hoa văn Đỉnh kép 2x2 (2x2 Peak)</strong>
+          <p>Tạo ra hai cụm 2x2 nhô lên như hai đỉnh núi đối xứng tuyệt đẹp ở hai góc chéo của Rubik 4x4x4. Đây là hoa văn rất đặc trưng cho dòng Rubik chẵn lớp.</p>
+          <div class="formula-box">Công thức: <span class="formula">b2 d2 Lw2 U F2 L2 D' L' D L' F U' F Lw2 d2 b2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="b2 d2 l2 U F F L L D' L' D L' F U' F l2 d2 b2">Tạo hoa văn Đỉnh kép 2x2</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>11. Hoa văn Đỉnh đôi xoắn (Twisted Peaks)</strong>
+          <p>Tạo hai khối chóp đỉnh tam giác xoắn ngược cực kỳ độc đáo và nghệ thuật ở hai góc đối diện của khối Rubik.</p>
+          <div class="formula-box">Công thức: <span class="formula">F D2 B R B' L' F D' L2 F2 R F' R' F2 L' F'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="F D D B R B' L' F D' L L F F R F' R' F F L' F'">Tạo hoa văn Đỉnh đôi xoắn</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>12. Hoa văn Chữ thập lớn (Big Cross)</strong>
+          <p>Tạo hình chữ thập (dấu cộng "+") lớn đồng màu chiếm trọn tâm của mỗi mặt trên khối Rubik, làm nổi bật cấu trúc đối xứng.</p>
+          <div class="formula-box">Công thức: <span class="formula">R2 L' D F2 R' D' R' L U' D R D B2 R' U D2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="R R L' D F F R' D' R' L U' D R D B B R' U D D">Tạo hoa văn Chữ thập lớn</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>13. Hoa văn Hộp quà Giáng sinh (Gift Box)</strong>
+          <p>Tạo hiệu ứng khối Rubik được thắt dây ruy-băng như một hộp quà xinh xắn đầy màu sắc từ mọi góc nhìn.</p>
+          <div class="formula-box">Công thức: <span class="formula">U B2 R2 B2 L2 F2 R2 D' F2 L2 B F' L F2 D U' R2 F' L' R'</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="U B B R R B B L L F F R R D' F F L L B F' L F F D U' R R F' L' R'">Tạo hoa văn Hộp quà</button>
+        </div>
+
+        <div class="step-guide">
+          <strong>14. Khối lồng khối 3 tầng song song (Triple Cube - Wide version)</strong>
+          <p>Phiên bản lồng khối 3 tầng (2x2x2 lồng trong 3x3x3 lồng trong 4x4x4) cực kỳ gọn gàng và song song theo hướng xoay rộng, cho hiệu ứng chiều sâu 3D hoàn mỹ.</p>
+          <div class="formula-box">Công thức: <span class="formula">Bw2 Rw' Dw Rw Dw' Rw' Dw Rw Uw Rw' Dw' Rw Dw Rw' Dw' Rw Uw' Bw2</span></div>
+          <button class="btn btn-success play-algo-pattern" data-algo="b2 r' d r d' r' d r u r' d' r d r' d' r u' b2">Tạo hoa văn Khối lồng khối 3 tầng</button>
         </div>
       </div>
     </div>
